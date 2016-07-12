@@ -184,7 +184,6 @@ body:before {
   color: #ffffff;
   font-family: "Lato", sans-serif; }
   .header h1, .header h2 {
-    opacity: 100%;
     margin-bottom: 0px;
     margin-top: 0px; }
   .header h1 {
@@ -195,6 +194,7 @@ body:before {
     font-size: 36px; }
 
 .info-page {
+  padding-top: 30px;
   font-size: 15px;
   z-index: 1;
   background-color: #ffffff;
@@ -264,7 +264,6 @@ body:before {
     .info-page .img-cell-right {
       flex-wrap: wrap; }
   .info-page .description {
-    padding-top: 30px;
     font-size: 15px;
     margin: auto;
     max-width: 600px; }
@@ -277,31 +276,34 @@ footer {
     color: #ff9393; }
 
 @media (max-width: 639px) {
-  .header h1 {
-    font-size-adjust: auto;
-    font-size: 35px; }
-  .header h2 {
-    font-size: 25px; }
+  padding: inherit;
+  .header {
+    padding-top: 30px; }
+    .header h1 {
+      font-size-adjust: auto;
+      font-size: 50px; }
+    .header h2 {
+      font-size: 40px; }
 
   .info-page {
-    padding: 1vmax 3vmax; } }
+    padding: 20px 15px; } }
 @media (max-width: 449px) {
   .img-gallery {
     max-width: 100px; }
 
   .header {
-    padding: 0 25px 45px; }
+    padding: 50px 25px 30px; }
     .header h1 {
       font-size-adjust: auto;
-      font-size: 30px; }
+      font-size: 40px; }
     .header h2 {
-      font-size: 20px; }
+      font-size: 30px; }
 
   .skill-list {
     margin-top: 20px; }
 
   .info-page {
-    padding: 1vmax 3vmax; }
+    padding: 20px 15px; }
     .info-page h1 {
       font-size-adjust: auto;
       font-size: 30px; }

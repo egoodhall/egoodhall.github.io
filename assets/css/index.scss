@@ -245,7 +245,6 @@ body:before {
   color: $white;
   font-family: $lato;
   h1, h2 {
-    opacity: 100%;
     margin-bottom: 0px;
     margin-top: 0px;
   }
@@ -262,6 +261,7 @@ body:before {
 //==========================
 // Info section -- IMPORTANT
 .info-page {
+  padding-top: 30px;
   font-size: 15px;
   z-index: 1;
   background-color: $white;
@@ -346,7 +346,6 @@ body:before {
     }
   }
   .description {
-    padding-top: 30px;
     font-size: 15px;
     margin: auto;
     max-width: 600px;
@@ -367,17 +366,19 @@ footer {
 //==============================
 // Handling smaller screen sizes
 @media (max-width: 639px) {
+  padding: inherit;
   .header {
+    padding-top: 30px;
     h1 {
       font-size-adjust: auto;
-      font-size: 35px;
+      font-size: 50px;
     }
     h2 {
-      font-size: 25px;
+      font-size: 40px;
     }
   }
   .info-page {
-    padding: 1vmax 3vmax;
+    padding: 20px 15px;
   }
 }
 
@@ -386,20 +387,20 @@ footer {
     max-width: 100px;
   }
   .header {
-    padding: 0 25px 45px;
+    padding: 50px 25px 30px;
     h1 {
       font-size-adjust: auto;
-      font-size: 30px;
+      font-size: 40px;
     }
     h2 {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
   .skill-list {
     margin-top: 20px;
   }
   .info-page {
-    padding: 1vmax 3vmax;
+    padding: 20px 15px;
     h1 {
       font-size-adjust: auto;
       font-size: 30px;
