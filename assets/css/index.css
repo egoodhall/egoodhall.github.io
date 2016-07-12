@@ -21,7 +21,8 @@ section {
     color: #FF2119;
     border: 1px #FF2119 solid; }
   .btn-outline {
-    border: 1px #2196F3 solid; }
+    border: 1px #2196F3 solid;
+    margin: 10px; }
 
 .link {
   color: #2196F3;
