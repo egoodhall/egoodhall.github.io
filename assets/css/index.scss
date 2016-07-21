@@ -13,6 +13,12 @@ section {
   display: block;
 }
 
+.center-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 //=========================
 //Buttons, links, and pills
 .btn {
@@ -274,6 +280,8 @@ body:before {
     text-align: center;
   }
   h1 {
+    margin: 0px 0px 0px;
+//    margin-bottom: 0px;
     padding-top: 30px;
     padding-bottom: 0px;
     display: flex;
@@ -325,6 +333,9 @@ body:before {
     justify-content: center;
     margin: auto;
     max-width: 800px;
+    h2 {
+      margin-top: 0px;
+    }
     img {
       display: block;
       vertical-align: middle;
@@ -381,6 +392,13 @@ footer {
   }
   .info-page {
     padding: 20px 15px;
+    h1 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .img-cell {
+      padding-top: 0px;
+    }
   }
 }
 
@@ -406,9 +424,14 @@ footer {
     h1 {
       font-size-adjust: auto;
       font-size: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     h2 {
       font-size: 20px;
+    }
+    .img-cell {
+      padding-top: 0px;
     }
   }
 }
