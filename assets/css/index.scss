@@ -2,6 +2,7 @@
 @import 'selectables';
 @import 'vector-graphics';
 @import 'background';
+@import 'mixins';
 
 body,
 main,
@@ -41,74 +42,33 @@ section {
     margin-top: 0px;
   }
   h1 {
-    font-weight: 300;
-    font-size: 64px;
+    @include font-specs(64px, 300);
   }
   h2 {
-    font-weight: 300;
-    font-size: 36px;
+    @include font-specs(36px, 300);
   }
 }
 
 //==========================
 // Info section -- IMPORTANT
 .info-page {
+  color: black;
   padding-top: 30px;
-  font-size: 15px;
   z-index: 1;
   background-color: $white;
   opacity: 100%;
-  font-family: $lato;
   padding-bottom: 40px;
+  font-family: $lato;
+  @include font-specs(16px, 400);
+  .description {
+    margin: auto;
+    max-width: 600px;
+  }
   h1, h2 {
     text-align: center;
   }
   h1 {
-    margin: 0px 0px 0px;
-    padding-top: 30px;
-    padding-bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    &:before, &:after {
-      flex-grow: 1;
-      height: 1px;
-      content: '\a0';
-      background-color: $blue;
-      position: relative;
-      top: 1.0em;
-      max-width: 80px;
-    }
-    &:before {
-      margin-right: 10px;
-    }
-    &:after {
-      margin-left: 10px;
-    }
-  }
-  .text-cell {
-    margin: auto;
-    max-width: 600px;
-    padding-top: 5px;
-    justify-content: center;
-    h2 {
-      font-size: 20px;
-      margin-bottom: 0px;
-    }
-    h4 {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding: 3px;
-      font-weight: 300;
-      text-align: center;
-      color: $grey;
-    }
-    ul {
-      display: inline-block;
-    }
-    .exp-edu {
-      display: none;
-    }
+    @include bar-header();
   }
   .img-cell {
     padding-top: 40px;
@@ -118,6 +78,7 @@ section {
     max-width: 800px;
     h2 {
       margin-top: 0px;
+      font-size: 24px;
     }
     img {
       display: block;
@@ -141,16 +102,34 @@ section {
       flex-wrap: wrap;
     }
   }
-  .description {
-    font-size: 15px;
+  .text-cell {
     margin: auto;
     max-width: 600px;
+    padding-top: 5px;
+    justify-content: center;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 0px;
+    }
+    h4 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 3px;
+      font-weight: 400;
+      text-align: center;
+      color: $grey;
+    }
+    .exp-edu {
+      display: none;
+    }
   }
 }
 
 //====================
 // Footer Section
 footer {
+  font-family: $lato;
+  font-weight: 400;
   color: $white;
   text-align: center;
   padding: 30px;
