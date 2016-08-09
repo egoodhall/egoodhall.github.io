@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <!DOCTYPE html>
-    <meta charset=utf-8>
+<html>
+  <head>
+    
+    <!--  Launch Async requests for the javascript  -->
+    <script async src=https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js></script>
+    <script async src=assets/js/index.js></script>
+    
+    <meta charset=utf-8 lang="en">
     <meta content="width=device-width,initial-scale=1" name=viewport>
-    <meta content=public http-equiv=Cache-control>
+    <meta http-equiv="Cache-control" content="public">
     <title>Eric Marshall</title>
     <meta content="Eric Marshall" name=author>
     <meta content="Eric Marshall" name=application-name>
@@ -14,17 +19,30 @@
     <meta content="I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to furthering my understanding and abilities." property=og:description>
     <meta content="Eric Marshall, Eric, Marshall, Erik, Erick, Marshal, Computer Science Personal Websites, CS, Comp Sci, Programming, Personal Website, Bucknell, Software Engineer, Programmer" name=keywords>
     <link href=assets/img/favicon.png rel=icon type=image/png>
+    
+    <!--  Load the CSS  -->
+    <link rel="stylesheet" href=assets/css/reset.css>
+	<link rel="stylesheet" href=assets/css/style.min.css>
     <link href=assets/css/index.min.css rel=stylesheet>
     <link href=assets/css/gallery.theme.css rel=stylesheet>
     <link href=assets/css/gallery.min.css rel=stylesheet>
+    
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel=stylesheet>
+  </head>
+    
+  <header>
     <div class=header>
-      <img class=img-profile src=assets/img/Profile.jpg>
+      <img class=img-profile src=assets/img/Profile.jpg alt="Profile Picture">
       <h1>Hi, I'm Eric.</h1>
     </div>
+  </header>
+  
+  <main>
     <div class=info-page>
         <div class=description>
-            <p>I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to furthering my understanding and abilities.</div>
+            <p>I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to challenging and expanding my abilities.
+        </div>
+      
         <ul class=skill-list>
             <li class=skill>
                 <svg height=62 viewBox="-1 0 64 62" width=62 xmlns=http://www.w3.org/2000/svg>
@@ -120,97 +138,139 @@
                                         <path d="M35.437 12.205H11.953l1.054 12.75h21.828l-.753 13.575-10.086 3.225-9.935-3.225-.335-4.284m10.273 19.66l-18.817-6L.964.656h46.064l-4.215 47.25-18.817 6" fill=none></path>
                                     </svg>
         </ul>
-        <h1>Projects</h1>
-        <div class="img-cell proj img-cell-right">
-            <div class=text-area>
-                <h2>ericmarshall.codes</h2>
-                <p>I created this page in the summer of 2016 using HTML and CSS (compiled from SCSS) with a pinch of JQuery thrown in. I keep it regularly updated with my current projects as well as my up-to-date resume.</div>
-            <div class=center-vertical>
-                <div class="autoplay gallery items-1">
-                    <figure class=item><img class=img-gallery src=assets/img/Website.png></figure>
-                </div>
-            </div>
-        </div>
-        <div class="img-cell proj img-cell-left">
-            <div class=center-vertical>
-                <div class="autoplay gallery items-2">
-                    <figure class=item><img class=img-gallery src=assets/img/Dime-Carousel-1.png></figure>
-                    <figure class=item><img class=img-gallery src=assets/img/Dime-Carousel-2.png></figure>
-                </div>
-            </div>
-            <div class=text-area>
-                <h2>Dime</h2>
-                <p>Dime is an iOS application designed to simplify sending expense reports. Its main goal is to make expense reports easy by not requiring a third-party web account to compile or send a group of expenses as a report.
-                        <div class=center><a class="btn btn-outline" href="https://geo.itunes.apple.com/us/app/dime-expense-reports-made/id1028920691?mt=8" target=_blank>App Store</a></div>
-            </div>
-        </div>
-        <div class="img-cell proj img-cell-right">
-            <div class=text-area>
-                <h2>Physio</h2>
-              <p>Physio is an android application that acts as an architecture for communication between a Microsoft Band and a remote server used to gather data that is fed to a cognitive architecture (ACT-R/&phi;).</p>
-              <p> The application is written in Java, and the companion server is written in Node.js with a MongoDB database.
-                        <div class=center></div>
-            </div>
-            <div class=center-vertical>
-                <div class="autoplay gallery items-2">
-                    <figure class=item><img class=img-gallery src=assets/img/Physio-Gallery-1.png></figure>
-                    <figure class=item><img class=img-gallery src=assets/img/Physio-Gallery-2.png></figure>
-                </div>
-            </div>
-        </div>
-        <div class="img-cell proj img-cell-left">
+      
+      
+        <h1 id="Projects">Projects</h1>
+        
+        <div>
+          <div class="img-cell proj img-cell-right">
+              <div class=text-area>
+                  <h2>ericmarshall.codes</h2>
+                  <p>I created this page in the summer of 2016 using HTML and CSS (compiled from SCSS) with a pinch of JQuery thrown in. I keep it regularly updated with my current projects as well as my up-to-date resume.</div>
+              <div class=center-vertical>
+                  <div class="autoplay gallery items-1">
+                      <figure class=item><img class=img-gallery src=assets/img/Website.png alt="Website Screenshot"></figure>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="img-cell proj img-cell-left">
+              <div class=center-vertical>
+                  <div class="autoplay gallery items-2">
+                      <figure class=item><img class=img-gallery src=assets/img/Dime-Carousel-1.png alt="Dime Screenshot 1"></figure>
+                      <figure class=item><img class=img-gallery src=assets/img/Dime-Carousel-2.png alt="Dime Screenshot 2"></figure>
+                  </div>
+              </div>
+              <div class=text-area>
+                  <h2>Dime</h2>
+                  <p>Dime is an iOS application designed to simplify sending expense reports. Its main goal is to make expense reports easy by not requiring a third-party web account to compile or send a group of expenses as a report.
+                          <div class=center><a class="btn btn-outline" href="https://geo.itunes.apple.com/us/app/dime-expense-reports-made/id1028920691?mt=8" target=_blank>App Store</a></div>
+              </div>
+          </div>
+          
+          <div class="img-cell proj img-cell-right">
+              <div class=text-area>
+                  <h2>Physio</h2>
+                <p>Physio is an android application that acts as an architecture for communication between a Microsoft Band and a remote server used to gather data that is fed to a cognitive architecture (ACT-R/&phi;).</p>
+                <p> The application is written in Java, and the companion server is written in Node.js with a MongoDB database.
+                          <div class=center></div>
+              </div>
+              <div class=center-vertical>
+                  <div class="autoplay gallery items-2">
+                      <figure class=item><img class=img-gallery src=assets/img/Physio-Gallery-1.png alt="Physio Screenshot 1"></figure>
+                      <figure class=item><img class=img-gallery src=assets/img/Physio-Gallery-2.png alt="Physio Screenshot 2"></figure>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="img-cell proj img-cell-left">
             <div class=center-vertical>
                 <div class="autoplay gallery items-3">
-                    <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-1.png></figure>
-                    <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-2.png></figure>
-                    <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-3.png></figure>
+                    <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-1.png alt="Pokemon Screenshot 1"></figure>
+                    <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-2.png alt="Pokemon Screenshot 2"></figure>
+                    <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-3.png alt="Pokemon Screenshot 3"></figure>
                 </div>
             </div>
             <div class=text-area>
-                <h2>Pokémon Orange & Blue</h2>
-                <p>Pokémon Orange & Blue is a version of the Pokémon games themed around Bucknell University. It is written in Java and was created by myself and 3 others in the spring of 2016 for a Software Engineering and Design class.
+                <h2>Pokémon Orange &amp; Blue</h2>
+                <p>Pokémon Orange &amp; Blue is a version of the Pokémon games themed around Bucknell University. It is written in Java and was created by myself and 3 others in the spring of 2016 for a Software Engineering and Design class.
                     <p>Our goal was to create something that looked and felt like one of the original Pokémon games. I was in charge of creating the graphical interface and its interactions with the underlying components of the game.
                         <div class=center><a class="btn btn-outline" href=https://github.com/BenMatase/PokemonOrangeAndBlue target=_blank>Github</a></div>
             </div>
+          </div>
+          
+          <div class=center>
+            <a class=btn href=# id=show-proj>Show More</a>
+            <a class=btn href=# id=hide-proj>Show Less</a>
+          </div>
         </div>
-        <div class=center><a class=btn href=# id=show-proj>Show More</a> <a class=btn href=# id=hide-proj>Show Less</a></div>
-        <h1>Experience & Education</h1>
-        <div class=center><a class="btn btn-outline" href=assets/resume/Eric%20Marshall%20Resume.pdf download>Download Resume</a></div>
-        <div class="text-cell exp-edu">
-            <h2>Student Researcher</h2>
-            <h4><span class="fa fa-building"></span> Bucknell University</h4>
-            <h4><span class="fa fa-calendar-check-o"></span> May 2016 - Aug 2016</h4>
-            <p>In the summer of 2016, I spent 3 months as a student research assistant working with Professor Chris Dancy. The goal of my research was designing and implementing an architecture for communication between a Microsoft Band smart watch and a Lisp based cognitive architecture (ACT-R/Φ). I did this by creating an Android application (Physio) that would pass data from the watch to a Django server running on my computer.</div>
-        <div class="text-cell exp-edu">
-            <h2>Bucknell University</h2>
-            <h4><span class="fa fa-graduation-cap"></span> Bachelor of Science - <strong>Computer Science and Engineering</strong></h4>
-            <h4><span class="fa fa-calendar-check-o"></span> Aug 2014 - Present</h4>
-            <p>My classes at Bucknell have not only helped me to learn and improve my coding, but have also taught me how to work as a member of a team using design frameworks like scrum to create software. Bucknell also led me to Android development when I did research in the computer science department in the summer of 2016.</div>
-        <div class="text-cell exp-edu">
-            <h2>Sales Associate</h2>
-            <h4><span class="fa fa-building"></span> Office Depot</h4>
-            <h4><span class="fa fa-calendar-check-o"></span> Jun 2014 - Aug 2014</h4>
-            <p>I spent the summer of 2014 working as a sales associate at Office Depot in Mountain View, California. In my time there, I learned how to engage with customers and work effectively as a member of a team.</div>
-        <div class="text-cell exp-edu">
+
+
+        <h1 id="ExpAndEdu">Experience &amp; Education</h1>
+        <div class=center>
+          <a class="btn btn-outline" href=assets/resume/Eric%20Marshall%20Resume.pdf download>Download Resume</a>
+        </div>
+        <div>
+          <div class="text-cell exp-edu">
+              <h2>Student Researcher</h2>
+              <h4><span class="fa fa-building"></span> Bucknell University</h4>
+              <h4><span class="fa fa-calendar-check-o"></span> May 2016 - Aug 2016</h4>
+              <p>In the summer of 2016, I spent 3 months as a student research assistant working with Professor Chris Dancy. The goal of my research was designing and implementing an architecture for communication between a Microsoft Band smart watch and a Lisp based cognitive architecture (ACT-R/Φ). I did this by creating an Android application (Physio) that would pass data from the watch to a Node.js server running on my computer.
+          </div>
+          
+          <div class="text-cell exp-edu">
+              <h2>Bucknell University</h2>
+              <h4><span class="fa fa-graduation-cap"></span> Bachelor of Science - <strong>Computer Science and Engineering</strong></h4>
+              <h4><span class="fa fa-calendar-check-o"></span> Aug 2014 - Present</h4>
+              <p>My classes at Bucknell have not only helped me to learn and improve my coding, but have also taught me how to work as a member of a team using design frameworks like scrum to create software. Bucknell also led me to Android development when I did research in the computer science department in the summer of 2016.
+          </div>
+          
+          <div class="text-cell exp-edu">
+              <h2>Sales Associate</h2>
+              <h4><span class="fa fa-building"></span> Office Depot</h4>
+              <h4><span class="fa fa-calendar-check-o"></span> Jun 2014 - Aug 2014</h4>
+              <p>I spent the summer of 2014 working as a sales associate at Office Depot in Mountain View, California. In my time there, I learned how to engage with customers and work effectively as a member of a team.
+          </div>
+          
+          <div class="text-cell exp-edu">
             <h2>Los Altos High School</h2>
             <h4><span class="fa fa-calendar-check-o"></span> Aug 2010 - Jun 2014</h4>
-            <p>Los Altos High School is where I first learned of my love for programming. In my senior year I took AP computer science, the class that made me want to pursue computer science in the first place.</div>
+            <p>Los Altos High School is where I first learned of my love for programming. In my senior year I took AP computer science, the class that made me want to pursue computer science in the first place.
+          </div>
+          
+        </div>
         <div class=center><a class=btn href=# id=show-exp-edu>Show More</a> <a class=btn href=# id=hide-exp-edu>Show Less</a></div>
-        <h1>Contact Me</h1>
+
+
+        <h1 id="Contact">Contact Me</h1>
         <div class="center text-cell">
-            <p>Contact me and I'll get back to you as soon as I can.
-                <p><a class=link href=https://www.google.com/maps/place/Lewisburg,+PA+17837/><span class="fa fa-map-marker"></span> Lewisburg, PA</a>
-                    <p><a class=link href=tel:+1-650-450-2960 rel=nofollow><span class="fa fa-phone"></span> +1 (650) 450-2960</a>
-                        <p><a class=link href=mailto:ericmarshall715@gmail.com rel=nofollow><span class="fa fa-envelope"></span> ericmarshall715@gmail.com</a></div>
-        <div class=link-pill><span class=btngroup><a class=btngroup--btn href=https://github.com/emm035/ target=_blank><span class="fa fa-github"></span></a> <a class=btngroup--btn href=https://www.facebook.com/eric.marshall.3742 target=_blank><span class="fa fa-facebook"></span></a> <a class=btngroup--btn href=https://www.linkedin.com/in/eric-marshall target=_blank><span class="fa fa-linkedin"></span></a></span>
+          <p>Contact me and I'll get back to you as soon as I can.</p>
+          <p><a class=link href=https://www.google.com/maps/place/Lewisburg,+PA+17837/><span class="fa fa-map-marker"></span> Lewisburg, PA</a></p>
+          <p><a class=link href=tel:+1-650-450-2960 rel=nofollow><span class="fa fa-phone"></span> +1 (650) 450-2960</a></p>
+          <p><a class=link href=mailto:ericmarshall715@gmail.com rel=nofollow><span class="fa fa-envelope"></span> ericmarshall715@gmail.com</a></p></div>
+
+        <div class=link-pill>
+          <span class=btngroup>
+            <a class=btngroup--btn href=https://github.com/emm035/ target=_blank><span class="fa fa-github"></span></a> 
+            <a class=btngroup--btn href=https://www.facebook.com/eric.marshall.3742 target=_blank><span class="fa fa-facebook"></span></a>
+            <a class=btngroup--btn href=https://www.linkedin.com/in/eric-marshall target=_blank><span class="fa fa-linkedin"></span></a>
+          </span>
         </div>
     </div>
-    <footer>Made with <span class="fa fa-heart"></span> by Eric
-        <br>©2016 Eric Marshall. All Rights Reserved.
-        <br>
-        <br>
-        <br>Pokémon and its trademarks are ©1995-2016 <a class="link link-inv" href=http://www.nintendo.com>Nintendo</a>, Creatures, <a class="link link-inv" href=http://www.gamefreak.co.jp/>GAMEFREAK</a> and <a class="link link-inv" href=http://www.pokemon.com/us/about-pokemon/>The Pokémon Company International, Inc.</a> All Pokémon related images are © of their respective owners. I mean no copyright infringement.</footer>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel=stylesheet>
-    <link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
-    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js></script>
-    <script src=assets/js/index.js></script>
+  </main>
+
+  <footer>
+    Made with <span class="fa fa-heart"></span> by Eric
+      <br>
+    ©2016 Eric Marshall. All Rights Reserved.
+      <br>
+      <br>
+      <br>
+    Pokémon and its trademarks are ©1995-2016 <a class="link link-inv" href=http://www.nintendo.com>Nintendo</a>, Creatures, <a class="link link-inv" href=http://www.gamefreak.co.jp/>GAMEFREAK</a> and <a class="link link-inv" href=http://www.pokemon.com/us/about-pokemon/>The Pokémon Company International, Inc.</a> All Pokémon related images are © of their respective owners. I mean no copyright infringement.
+  </footer>
+
+  <!--  Request icons after everything else, because they're not critical  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel=stylesheet>
+  <link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css rel=stylesheet>
+
+</html>
