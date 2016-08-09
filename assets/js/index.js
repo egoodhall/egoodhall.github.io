@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // Showing/Hiding experience/education items
-  var showExpEdu = 3;
+  var showExpEdu = 1;
   if ($(".exp-edu").length <= showExpEdu) {
     $("#show-exp-edu").hide();
     $("#hide-exp-edu").hide();
@@ -9,7 +9,7 @@ $(document).ready(function(){
     $(".exp-edu").slice(showExpEdu, $(".exp-edu").length).hide();
     $("#show-exp-edu").on('click', function (e) {
       e.preventDefault();
-      $(".exp-edu:hidden").slideDown();
+      $(".exp-edu").slice(showExpEdu, $(".exp-edu").length).slideDown();
       $("#show-exp-edu").hide();
       $("#hide-exp-edu").show();
     });
@@ -21,7 +21,7 @@ $(document).ready(function(){
     });
   }
   // Showing/Hiding project items
-  var showProjects = 3;
+  var showProjects = 1;
   if ($(".proj").length <= showProjects) {
     $("#show-proj").hide();
     $("#hide-proj").hide();
@@ -30,7 +30,7 @@ $(document).ready(function(){
     $(".proj").slice(showProjects, $(".proj").length).hide();
     $("#show-proj").on('click', function (e) {
       e.preventDefault();
-      $(".proj:hidden").slideDown();
+      $(".proj").slice(showProjects, $(".proj").length).slideDown();
       $("#show-proj").hide();
       $("#hide-proj").show();
     });

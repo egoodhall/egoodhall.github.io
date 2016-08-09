@@ -2,8 +2,18 @@ CACHE MANIFEST
 
 # Cache manifest version 1.0
 
-/assets/img/Profile.png
-/assets/resume/Resume.pdf
+/assets/img/Profile.jpg
+/assets/img/Dime-Carousel-1.png
+/assets/img/Dime-Carousel-2.png
+/assets/img/favicon.png
+/assets/img/Physio-Gallery-1.png
+/assets/img/Physio-Gallery-2.png
+/assets/img/Pokemon-Carousel-1.png
+/assets/img/Pokemon-Carousel-2.png
+/assets/img/Pokemon-Carousel-3.png
+/assets/img/Website.png
+
+/assets/resume/Eric%20Marshall%20Resume.pdf
 
 NETWORK:
 *
