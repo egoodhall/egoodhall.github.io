@@ -270,6 +270,10 @@
   <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400">
   <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
+  <script type="text/javascript" src="./assets/js/zepto.min.js"></script>
+  <script>
+    $(document).ready(function(){var e=3;$(".exp-edu").length<=e?($("#show-exp-edu").hide(),$("#hide-exp-edu").hide()):($("#hide-exp-edu").hide(),$(".exp-edu").slice(e,$(".exp-edu").length).hide(),$("#show-exp-edu").on("click",function(e){e.preventDefault(),$(".exp-edu:hidden").slideDown(),$("#show-exp-edu").hide(),$("#hide-exp-edu").show()}),$("#hide-exp-edu").on("click",function(i){i.preventDefault(),$(".exp-edu").slice(e,$(".exp-edu").length).slideUp(),$("#hide-exp-edu").hide(),$("#show-exp-edu").show()}));var i=3;$(".proj").length<=i?($("#show-proj").hide(),$("#hide-proj").hide()):($("#hide-proj").hide(),$(".proj").slice(i,$(".proj").length).hide(),$("#show-proj").on("click",function(e){e.preventDefault(),$(".proj:hidden").slideDown(),$("#show-proj").hide(),$("#hide-proj").show()}),$("#hide-proj").on("click",function(e){e.preventDefault(),$(".proj").slice(i,$(".proj").length).slideUp(),$("#hide-proj").hide(),$("#show-proj").show()}))});
+  </script>
 
 </body>
 
