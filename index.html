@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html manifest="manifest.appcache" lang="en">
 
-<head>
+  <head>
+    <!--  Launch Async requests for the javascript  -->
+    <meta charset=utf-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <title>Eric Marshall</title>
+    <meta content="Eric Marshall" name=author>
+    <meta content="Eric Marshall" name=application-name>
+    <meta content=website property=og:type>
+    <meta content=https://ericmarshall.codes/ property=og:url>
+    <meta content="Eric Marshall" property=og:title>
+    <meta content="I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to furthering my understanding and abilities." name=description>
+    <meta content="I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to furthering my understanding and abilities." property=og:description>
+    <meta content="Eric Marshall, Eric, Marshall, Erik, Erick, Marshal, Computer Science Personal Websites, CS, Comp Sci, Programming, Personal Website, Bucknell, Software Engineer, Programmer" name=keywords>
+    <link href=assets/img/favicon.png rel=icon type=image/png>
 
-  <!--  Launch Async requests for the javascript  -->
-  <meta charset=utf-8>
-  <meta content="width=device-width,initial-scale=1" name=viewport>
-  <title>Eric Marshall</title>
-  <meta content="Eric Marshall" name=author>
-  <meta content="Eric Marshall" name=application-name>
-  <meta content=website property=og:type>
-  <meta content=https://ericmarshall.codes/ property=og:url>
-  <meta content="Eric Marshall" property=og:title>
-  <meta content="I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to furthering my understanding and abilities." name=description>
-  <meta content="I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to furthering my understanding and abilities." property=og:description>
-  <meta content="Eric Marshall, Eric, Marshall, Erik, Erick, Marshal, Computer Science Personal Websites, CS, Comp Sci, Programming, Personal Website, Bucknell, Software Engineer, Programmer" name=keywords>
-  <link href=assets/img/favicon.png rel=icon type=image/png>
+    <!--  Load all scripts  -->
+    <script async type="text/javascript" src="./assets/js/zepto.min.js"></script>
+    <script>
+      $(document).ready(function(){var e=3;$(".exp-edu").length<=e?($("#show-exp-edu").hide(),$("#hide-exp-edu").hide()):($("#hide-exp-edu").hide(),$(".exp-edu").slice(e,$(".exp-edu").length).hide(),$("#show-exp-edu").on("click",function(e){e.preventDefault(),$(".exp-edu:hidden").slideDown(),$("#show-exp-edu").hide(),$("#hide-exp-edu").show()}),$("#hide-exp-edu").on("click",function(i){i.preventDefault(),$(".exp-edu").slice(e,$(".exp-edu").length).slideUp(),$("#hide-exp-edu").hide(),$("#show-exp-edu").show()}));var i=3;$(".proj").length<=i?($("#show-proj").hide(),$("#hide-proj").hide()):($("#hide-proj").hide(),$(".proj").slice(i,$(".proj").length).hide(),$("#show-proj").on("click",function(e){e.preventDefault(),$(".proj:hidden").slideDown(),$("#show-proj").hide(),$("#hide-proj").show()}),$("#hide-proj").on("click",function(e){e.preventDefault(),$(".proj").slice(i,$(".proj").length).slideUp(),$("#hide-proj").hide(),$("#show-proj").show()}))});
+    </script>
+
+    <!--  Load the initial CSS  -->
+    <link rel=stylesheet href=assets/css/index.min.css>
+  </head>
   
-  <!--  Load all scripts  -->
-  <script async type="text/javascript" src="./assets/js/zepto.min.js"></script>
-  <script>
-    $(document).ready(function(){var e=3;$(".exp-edu").length<=e?($("#show-exp-edu").hide(),$("#hide-exp-edu").hide()):($("#hide-exp-edu").hide(),$(".exp-edu").slice(e,$(".exp-edu").length).hide(),$("#show-exp-edu").on("click",function(e){e.preventDefault(),$(".exp-edu:hidden").slideDown(),$("#show-exp-edu").hide(),$("#hide-exp-edu").show()}),$("#hide-exp-edu").on("click",function(i){i.preventDefault(),$(".exp-edu").slice(e,$(".exp-edu").length).slideUp(),$("#hide-exp-edu").hide(),$("#show-exp-edu").show()}));var i=3;$(".proj").length<=i?($("#show-proj").hide(),$("#hide-proj").hide()):($("#hide-proj").hide(),$(".proj").slice(i,$(".proj").length).hide(),$("#show-proj").on("click",function(e){e.preventDefault(),$(".proj:hidden").slideDown(),$("#show-proj").hide(),$("#hide-proj").show()}),$("#hide-proj").on("click",function(e){e.preventDefault(),$(".proj").slice(i,$(".proj").length).slideUp(),$("#hide-proj").hide(),$("#show-proj").show()}))});
-  </script>
-
-  <!--  Load the CSS  -->
-  <link rel=stylesheet href=assets/css/index.min.css>
-</head>
   <body>
     <header>
       <div class=header>
@@ -267,6 +267,7 @@
     </footer>
   </body>
 
+  <!--  Link CSS stylesheets  -->
   <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400">
   <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
