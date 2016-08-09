@@ -15,6 +15,11 @@
     <meta content="I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to furthering my understanding and abilities." property=og:description>
     <meta content="Eric Marshall, Eric, Marshall, Erik, Erick, Marshal, Computer Science Personal Websites, CS, Comp Sci, Programming, Personal Website, Bucknell, Software Engineer, Programmer" name=keywords>
     <link href=assets/img/favicon.png rel=icon type=image/png>
+    <!--  Load all scripts  -->
+    <script async type="text/javascript" src="./assets/js/zepto.min.js"></script>
+    <script>
+      $(document).ready(function(){var e=3;$(".exp-edu").length<=e?($("#show-exp-edu").hide(),$("#hide-exp-edu").hide()):($("#hide-exp-edu").hide(),$(".exp-edu").slice(e,$(".exp-edu").length).hide(),$("#show-exp-edu").on("click",function(e){e.preventDefault(),$(".exp-edu:hidden").slideDown(),$("#show-exp-edu").hide(),$("#hide-exp-edu").show()}),$("#hide-exp-edu").on("click",function(i){i.preventDefault(),$(".exp-edu").slice(e,$(".exp-edu").length).slideUp(),$("#hide-exp-edu").hide(),$("#show-exp-edu").show()}));var i=3;$(".proj").length<=i?($("#show-proj").hide(),$("#hide-proj").hide()):($("#hide-proj").hide(),$(".proj").slice(i,$(".proj").length).hide(),$("#show-proj").on("click",function(e){e.preventDefault(),$(".proj:hidden").slideDown(),$("#show-proj").hide(),$("#hide-proj").show()}),$("#hide-proj").on("click",function(e){e.preventDefault(),$(".proj").slice(i,$(".proj").length).slideUp(),$("#hide-proj").hide(),$("#show-proj").show()}))});
+    </script>
   </head>
   
   <body>
@@ -257,14 +262,6 @@
       <br> Pokémon and its trademarks are ©1995-2016 <a class="link link-inv" href=http://www.nintendo.com>Nintendo</a>, Creatures, <a class="link link-inv" href=http://www.gamefreak.co.jp/>GAMEFREAK</a> and <a class="link link-inv" href=http://www.pokemon.com/us/about-pokemon/>The Pokémon Company International, Inc.</a> All Pokémon related images are © of their respective owners. I mean no copyright infringement.
     </footer>
   </body>
-
-
-
-  <!--  Load all scripts  -->
-  <script async type="text/javascript" src="./assets/js/zepto.min.js"></script>
-  <script>
-    $(document).ready(function(){var e=3;$(".exp-edu").length<=e?($("#show-exp-edu").hide(),$("#hide-exp-edu").hide()):($("#hide-exp-edu").hide(),$(".exp-edu").slice(e,$(".exp-edu").length).hide(),$("#show-exp-edu").on("click",function(e){e.preventDefault(),$(".exp-edu:hidden").slideDown(),$("#show-exp-edu").hide(),$("#hide-exp-edu").show()}),$("#hide-exp-edu").on("click",function(i){i.preventDefault(),$(".exp-edu").slice(e,$(".exp-edu").length).slideUp(),$("#hide-exp-edu").hide(),$("#show-exp-edu").show()}));var i=3;$(".proj").length<=i?($("#show-proj").hide(),$("#hide-proj").hide()):($("#hide-proj").hide(),$(".proj").slice(i,$(".proj").length).hide(),$("#show-proj").on("click",function(e){e.preventDefault(),$(".proj:hidden").slideDown(),$("#show-proj").hide(),$("#hide-proj").show()}),$("#hide-proj").on("click",function(e){e.preventDefault(),$(".proj").slice(i,$(".proj").length).slideUp(),$("#hide-proj").hide(),$("#show-proj").show()}))});
-  </script>
 
   <!--  Load the initial CSS  -->
   <link rel=stylesheet href=assets/css/index.min.css>
