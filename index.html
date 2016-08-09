@@ -4,8 +4,6 @@
 <head>
 
   <!--  Launch Async requests for the javascript  -->
-  <script async src=https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js></script>
-  <script async src=assets/js/index.js></script>
   <meta charset=utf-8>
   <meta content="width=device-width,initial-scale=1" name=viewport>
   <title>Eric Marshall</title>
@@ -18,263 +16,259 @@
   <meta content="I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to furthering my understanding and abilities." property=og:description>
   <meta content="Eric Marshall, Eric, Marshall, Erik, Erick, Marshal, Computer Science Personal Websites, CS, Comp Sci, Programming, Personal Website, Bucknell, Software Engineer, Programmer" name=keywords>
   <link href=assets/img/favicon.png rel=icon type=image/png>
-
-  <!--  Load the CSS  -->
-<!--
-  <link rel=stylesheet href=assets/css/gallery.theme.css>
-  <link rel=stylesheet href=assets/css/gallery.min.css>
--->
-  <link rel=stylesheet href=assets/css/index.min.css>
-</head>
-
-<body>
-  <header>
-    <div class=header>
-      <img class=img-profile src=assets/img/Profile.jpg alt="Profile Picture">
-      <h1>Hi, I'm Eric.</h1>
-    </div>
-  </header>
-
-  <main>
-    <div class=info-page>
-      <div class=description>
-        <p>I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to challenging and expanding my abilities.
-      </div>
-
-      <ul class=skill-list>
-        <li class=skill>
-          <svg height=62 viewBox="-1 0 64 62" width=62 xmlns=http://www.w3.org/2000/svg>
-                      <title>Python</title>
-                      <path d="M30.775-0.006c-15.825,0-14.837,6.863-14.837,6.863l0.018,7.109h15.102v2.135h-21.1
-                    c0,0-10.126-1.148-10.126,14.819S8.67,46.321,8.67,46.321h5.275v-7.41c0,0-0.284-8.838,8.697-8.838c8.982,0,14.978,0,14.978,0
-                    s8.415,0.137,8.415-8.133c0-8.269,0-13.672,0-13.672S47.313-0.006,30.775-0.006z M22.448,4.774c1.503,0,2.717,1.214,2.717,2.717
-                    c0,1.502-1.214,2.717-2.717,2.717c-1.502,0-2.717-1.215-2.717-2.717C19.731,5.988,20.946,4.774,22.448,4.774z" fill=none id=path8615 />
-                      <path d="M31.225,62.006c15.825,0,14.838-6.862,14.838-6.862l-0.018-7.11H30.942v-2.134h21.1
-                    c0,0,10.127,1.147,10.127-14.82S53.33,15.678,53.33,15.678h-5.274v7.41c0,0,0.284,8.837-8.697,8.837c-8.982,0-14.979,0-14.979,0
-                    s-8.415-0.135-8.415,8.134c0,8.269,0,13.673,0,13.673S14.687,62.006,31.225,62.006z M39.552,57.225
-                    c-1.503,0-2.717-1.214-2.717-2.717c0-1.502,1.214-2.717,2.717-2.717c1.502,0,2.717,1.215,2.717,2.717
-                    C42.269,56.011,41.054,57.225,39.552,57.225z" fill=none id=path8620 />
-                  </svg>
-          <li class=skill>
-            <svg height=62 viewBox="0 0 62 62" width=62 xmlns=http://www.w3.org/2000/svg>
-                          <title>Git</title>
-                          <path d="M22.902 7.546l6.847 6.874c1.59-.54 3.41-.178 4.68 1.095 1.272 1.282 1.63 3.13 1.08 4.732l6.6 6.624c1.595-.55 3.44-.19 4.712 1.09 1.782 1.79 1.782 4.69 0 6.48-1.783 1.79-4.67 1.79-6.453 0-1.34-1.346-1.67-3.322-.993-4.98l-6.154-6.18v16.26c.433.217.844.505 1.205.867 1.782 1.79 1.782 4.688 0 6.48-1.78 1.787-4.67 1.787-6.45 0-1.784-1.79-1.784-4.69 0-6.48.44-.44.95-.774 1.492-1V22.99c-.544-.222-1.053-.554-1.494-.998-1.35-1.354-1.674-3.343-.98-5.007l-6.75-6.777L2.426 28.1c-1.5 1.504-1.5 3.94 0 5.444L28.42 59.638c1.497 1.503 3.924 1.503 5.423 0l25.872-25.972c1.498-1.504 1.498-3.943 0-5.446L33.72 2.127c-1.494-1.503-3.923-1.503-5.42 0l-2.846 2.857" fill=none />
-                      </svg>
-            <li class=skill>
-              <svg height=62px viewBox="0 0 62 62" width=62px xmlns=http://www.w3.org/2000/svg>
-                              <title>iOS</title>
-                              <path d="M55.62,48.094c-0.919,2.124-2.006,4.077-3.267,5.872c-1.717,2.449-3.124,4.145-4.207,5.087
-            c-1.68,1.543-3.481,2.336-5.409,2.38c-1.383,0-3.053-0.394-4.995-1.191c-1.949-0.797-3.739-1.188-5.377-1.188
-            c-1.718,0-3.56,0.392-5.53,1.188c-1.973,0.798-3.564,1.214-4.78,1.256c-1.847,0.079-3.69-0.734-5.529-2.444
-            c-1.174-1.025-2.643-2.781-4.401-5.267c-1.887-2.654-3.439-5.734-4.654-9.243c-1.302-3.792-1.954-7.462-1.954-11.017
-            c0-4.073,0.879-7.584,2.642-10.527c1.385-2.363,3.228-4.228,5.534-5.597c2.306-1.368,4.798-2.066,7.48-2.11
-            c1.469,0,3.394,0.454,5.786,1.347c2.386,0.895,3.918,1.35,4.59,1.35c0.501,0,2.205-0.531,5.089-1.591
-            c2.728-0.981,5.03-1.388,6.917-1.228c5.111,0.412,8.952,2.428,11.504,6.058c-4.569,2.77-6.832,6.648-6.787,11.625
-            c0.043,3.877,1.447,7.103,4.212,9.664c1.251,1.188,2.652,2.108,4.207,2.76C56.354,46.258,55.997,47.193,55.62,48.094L55.62,48.094z
-             M43.896,1.963c0,3.039-1.108,5.876-3.321,8.501c-2.671,3.122-5.9,4.926-9.402,4.641c-0.045-0.364-0.07-0.749-0.07-1.152
-            c0-2.917,1.27-6.039,3.526-8.59c1.124-1.292,2.557-2.367,4.292-3.224c1.731-0.844,3.372-1.312,4.914-1.392
-            C43.877,1.154,43.896,1.56,43.896,1.963L43.896,1.963z" fill=none />
-                          </svg>
-              <li class=skill>
-                <svg height=62px viewBox="0 0 62 62" width=62px xmlns=http://www.w3.org/2000/svg>
-                                  <title>Android</title>
-                                  <path d="M15.592,46.425c0,1.412,1.156,2.568,2.568,2.568h2.568v8.987c0,2.131,1.72,3.853,3.852,3.853
-              s3.853-1.722,3.853-3.853v-8.987h5.135v8.987c0,2.131,1.722,3.853,3.854,3.853c2.131,0,3.852-1.722,3.852-3.853v-8.987h2.568
-              c1.412,0,2.567-1.156,2.567-2.568V20.744H15.592V46.425z M9.171,20.744c-2.131,0-3.852,1.721-3.852,3.852v17.976
-              c0,2.133,1.72,3.853,3.852,3.853c2.132,0,3.853-1.72,3.853-3.853V24.596C13.024,22.465,11.304,20.744,9.171,20.744z M52.829,20.744
-              c-2.132,0-3.853,1.721-3.853,3.852v17.976c0,2.133,1.721,3.853,3.853,3.853c2.131,0,3.853-1.72,3.853-3.853V24.596
-              C56.682,22.465,54.96,20.744,52.829,20.744z M40.062,5.747l3.342-3.339c0.512-0.513,0.512-1.309,0-1.823
-              c-0.516-0.513-1.309-0.513-1.823,0l-3.8,3.801C35.75,3.358,33.439,2.768,31,2.768c-2.465,0-4.776,0.591-6.832,1.618l-3.826-3.801
-              c-0.514-0.513-1.311-0.513-1.824,0c-0.514,0.515-0.514,1.311,0,1.823l3.365,3.365c-3.801,2.798-6.292,7.292-6.292,12.404h30.816
-              C46.408,13.065,43.916,8.546,40.062,5.747z M25.865,13.04h-2.568v-2.568h2.568V13.04z M38.704,13.04h-2.567v-2.568h2.567V13.04z" fill=none />
-                              </svg>
-                <li class=skill>
-                  <svg height=62px viewBox="0 0 62 62" width=64px xmlns=http://www.w3.org/2000/svg>
-                                      <title>Sass</title>
-                                      <path d="M53.374,33.558c-2.162,0.012-4.041,0.532-5.614,1.302c-0.577-1.144-1.154-2.162-1.257-2.909
-            c-0.113-0.871-0.248-1.403-0.113-2.444c0.137-1.042,0.748-2.524,0.736-2.637s-0.136-0.645-1.381-0.656s-2.32,0.238-2.444,0.566
-            s-0.362,1.075-0.521,1.845c-0.215,1.132-2.49,5.173-3.792,7.288c-0.419-0.826-0.78-1.55-0.86-2.127
-            c-0.113-0.871-0.248-1.404-0.113-2.445c0.137-1.041,0.748-2.523,0.736-2.637s-0.137-0.645-1.381-0.656
-            c-1.245-0.012-2.32,0.237-2.445,0.566c-0.124,0.328-0.26,1.098-0.52,1.844c-0.262,0.748-3.283,7.493-4.075,9.236
-            c-0.407,0.894-0.758,1.607-1.007,2.094l0,0c0,0-0.011,0.033-0.045,0.09c-0.215,0.419-0.339,0.646-0.339,0.646s0,0,0,0.011
-            c-0.17,0.307-0.351,0.59-0.441,0.59c-0.068,0-0.192-0.815,0.022-1.925c0.453-2.343,1.529-5.987,1.517-6.112
-            c0-0.067,0.203-0.701-0.702-1.029c-0.883-0.328-1.2,0.215-1.279,0.215s-0.136,0.192-0.136,0.192s0.984-4.097-1.879-4.097
-            c-1.788,0-4.255,1.958-5.478,3.724c-0.77,0.419-2.411,1.312-4.165,2.274c-0.667,0.373-1.358,0.747-2.003,1.098
-            c-0.045-0.045-0.091-0.102-0.136-0.146C10.795,33.614,4.389,31,4.661,26.031c0.102-1.811,0.724-6.564,12.302-12.337
-            c9.53-4.697,17.113-3.395,18.426-0.509c1.879,4.12-4.063,11.771-13.91,12.88c-3.758,0.419-5.727-1.03-6.225-1.573
-            c-0.521-0.566-0.6-0.6-0.792-0.487c-0.317,0.169-0.113,0.679,0,0.973c0.294,0.77,1.505,2.128,3.554,2.796
-            c1.811,0.588,6.213,0.916,11.544-1.144c5.964-2.309,10.628-8.726,9.258-14.102c-1.369-5.455-10.424-7.255-18.991-4.21
-            c-5.093,1.811-10.616,4.663-14.589,8.375c-4.72,4.414-5.467,8.251-5.161,9.858c1.098,5.704,8.964,9.416,12.11,12.167
-            c-0.159,0.091-0.306,0.17-0.43,0.237c-1.573,0.781-7.572,3.916-9.066,7.232c-1.698,3.758,0.272,6.451,1.573,6.813
-            c4.041,1.12,8.194-0.894,10.424-4.222c2.23-3.327,1.958-7.65,0.928-9.631c-0.011-0.023-0.022-0.046-0.045-0.068
-            c0.408-0.238,0.826-0.486,1.234-0.725c0.804-0.475,1.596-0.916,2.275-1.279c-0.385,1.053-0.668,2.309-0.804,4.12
-            c-0.17,2.128,0.702,4.89,1.845,5.976c0.509,0.476,1.109,0.486,1.494,0.486c1.335,0,1.936-1.108,2.603-2.422
-            c0.815-1.606,1.551-3.475,1.551-3.475s-0.917,5.049,1.573,5.049c0.905,0,1.822-1.178,2.229-1.777c0,0.012,0,0.012,0,0.012
-            s0.022-0.034,0.068-0.113c0.091-0.147,0.147-0.238,0.147-0.238s0-0.012,0-0.022c0.363-0.634,1.177-2.071,2.388-4.459
-            c1.562-3.079,3.067-6.927,3.067-6.927s0.136,0.939,0.6,2.501c0.272,0.917,0.838,1.925,1.29,2.897
-            c-0.361,0.51-0.588,0.793-0.588,0.793s0,0,0.012,0.011c-0.295,0.385-0.611,0.804-0.963,1.211c-1.233,1.472-2.705,3.157-2.908,3.645
-            c-0.238,0.577-0.182,0.996,0.271,1.335c0.328,0.25,0.916,0.283,1.517,0.25c1.108-0.08,1.89-0.352,2.274-0.521
-            c0.6-0.215,1.302-0.543,1.959-1.029c1.211-0.895,1.946-2.174,1.878-3.859c-0.034-0.928-0.339-1.856-0.713-2.729
-            c0.113-0.158,0.216-0.316,0.328-0.475c1.913-2.796,3.396-5.863,3.396-5.863s0.136,0.939,0.6,2.502
-            c0.227,0.792,0.691,1.652,1.098,2.49c-1.799,1.459-2.908,3.157-3.305,4.266c-0.713,2.061-0.158,2.988,0.895,3.203
-            c0.475,0.103,1.154-0.124,1.652-0.339c0.634-0.204,1.381-0.555,2.094-1.075c1.211-0.895,2.377-2.139,2.309-3.826
-            c-0.033-0.77-0.237-1.527-0.521-2.264c1.528-0.633,3.497-0.984,6.011-0.689c5.387,0.633,6.451,3.995,6.247,5.41
-            c-0.204,1.414-1.336,2.184-1.709,2.422c-0.374,0.237-0.498,0.316-0.464,0.486c0.045,0.249,0.227,0.238,0.543,0.192
-            c0.441-0.079,2.83-1.144,2.932-3.746C62.146,37.157,58.976,33.523,53.374,33.558z M11.814,47.569
-            c-1.789,1.947-4.278,2.683-5.354,2.061c-1.154-0.668-0.702-3.543,1.494-5.604c1.335-1.256,3.056-2.422,4.199-3.135
-            c0.26-0.158,0.645-0.385,1.109-0.668c0.079-0.045,0.125-0.067,0.125-0.067l0,0c0.09-0.057,0.181-0.113,0.271-0.17
-            C14.462,42.929,13.693,45.521,11.814,47.569z M24.83,38.719c-0.623,1.517-1.924,5.398-2.716,5.184
-            c-0.679-0.181-1.098-3.124-0.136-6.032c0.486-1.461,1.517-3.203,2.116-3.883c0.974-1.086,2.049-1.448,2.309-1.007
-            C26.731,33.558,25.214,37.769,24.83,38.719z M35.57,43.856c-0.261,0.137-0.509,0.227-0.622,0.159
-            c-0.08-0.046,0.113-0.227,0.113-0.227s1.346-1.448,1.879-2.104c0.305-0.385,0.667-0.838,1.052-1.348c0,0.045,0,0.102,0,0.147
-            C37.992,42.216,36.317,43.382,35.57,43.856z M43.854,41.967c-0.191-0.136-0.158-0.589,0.487-2.003
-            c0.249-0.555,0.837-1.482,1.845-2.377c0.113,0.362,0.192,0.713,0.182,1.041C46.356,40.812,44.794,41.628,43.854,41.967z" fill=none />
-                                  </svg>
-                  <li class=skill>
-                    <svg height=55 viewBox="0 0 48 55" width=48 xmlns=http://www.w3.org/2000/svg>
-                                          <title>HTML</title>
-                                          <path d="M35.437 12.205H11.953l1.054 12.75h21.828l-.753 13.575-10.086 3.225-9.935-3.225-.335-4.284m10.273 19.66l-18.817-6L.964.656h46.064l-4.215 47.25-18.817 6" fill=none></path>
-                                      </svg>
-      </ul>
-
-
-      <h1 id="Projects">Projects</h1>
-
-      <div>
-        <div class="img-cell proj img-cell-right">
-          <div class=text-area>
-            <h2>ericmarshall.codes</h2>
-            <p>I created this page in the summer of 2016 using HTML and CSS (compiled from SCSS) with a pinch of JQuery thrown in. I keep it regularly updated with my current projects as well as my up-to-date resume.</div>
-          <div class=center-vertical>
-            <div class="autoplay gallery items-1">
-              <figure class=item><img class=img-gallery src=assets/img/Website.png alt="Website Screenshot"></figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="img-cell proj img-cell-left">
-          <div class=center-vertical>
-            <div class="autoplay gallery items-2">
-              <figure class=item><img class=img-gallery src=assets/img/Dime-Carousel-1.png alt="Dime Screenshot 1"></figure>
-              <figure class=item><img class=img-gallery src=assets/img/Dime-Carousel-2.png alt="Dime Screenshot 2"></figure>
-            </div>
-          </div>
-          <div class=text-area>
-            <h2>Dime</h2>
-            <p>Dime is an iOS application designed to simplify sending expense reports. Its main goal is to make expense reports easy by not requiring a third-party web account to compile or send a group of expenses as a report.
-              <div class=center><a class="btn btn-outline" href="https://geo.itunes.apple.com/us/app/dime-expense-reports-made/id1028920691?mt=8" target=_blank>App Store</a></div>
-          </div>
-        </div>
-
-        <div class="img-cell proj img-cell-right">
-          <div class=text-area>
-            <h2>Physio</h2>
-            <p>Physio is an android application that acts as an architecture for communication between a Microsoft Band and a remote server used to gather data that is fed to a cognitive architecture (ACT-R/&phi;).</p>
-            <p> The application is written in Java, and the companion server is written in Node.js with a MongoDB database.
-              <div class=center></div>
-          </div>
-          <div class=center-vertical>
-            <div class="autoplay gallery items-2">
-              <figure class=item><img class=img-gallery src=assets/img/Physio-Gallery-1.png alt="Physio Screenshot 1"></figure>
-              <figure class=item><img class=img-gallery src=assets/img/Physio-Gallery-2.png alt="Physio Screenshot 2"></figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="img-cell proj img-cell-left">
-          <div class=center-vertical>
-            <div class="autoplay gallery items-3">
-              <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-1.png alt="Pokemon Screenshot 1"></figure>
-              <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-2.png alt="Pokemon Screenshot 2"></figure>
-              <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-3.png alt="Pokemon Screenshot 3"></figure>
-            </div>
-          </div>
-          <div class=text-area>
-            <h2>Pokémon Orange &amp; Blue</h2>
-            <p>Pokémon Orange &amp; Blue is a version of the Pokémon games themed around Bucknell University. It is written in Java and was created by myself and 3 others in the spring of 2016 for a Software Engineering and Design class.
-              <p>Our goal was to create something that looked and felt like one of the original Pokémon games. I was in charge of creating the graphical interface and its interactions with the underlying components of the game.
-                <div class=center><a class="btn btn-outline" href=https://github.com/BenMatase/PokemonOrangeAndBlue target=_blank>Github</a></div>
-          </div>
-        </div>
-
-        <div class=center>
-          <a class=btn href=# id=show-proj>Show More</a>
-          <a class=btn href=# id=hide-proj>Show Less</a>
-        </div>
-      </div>
-
-
-      <h1 id="ExpAndEdu">Experience &amp; Education</h1>
-      <div class=center>
-        <a class="btn btn-outline" href=assets/resume/Eric%20Marshall%20Resume.pdf download>Download Resume</a>
-      </div>
-      <div>
-        <div class="text-cell exp-edu">
-          <h2>Student Researcher</h2>
-          <h4><span class="fa fa-building"></span> Bucknell University</h4>
-          <h4><span class="fa fa-calendar-check-o"></span> May 2016 - Aug 2016</h4>
-          <p>In the summer of 2016, I spent 3 months as a student research assistant working with Professor Chris Dancy. The goal of my research was designing and implementing an architecture for communication between a Microsoft Band smart watch and a Lisp based cognitive architecture (ACT-R/Φ). I did this by creating an Android application (Physio) that would pass data from the watch to a Node.js server running on my computer.
-        </div>
-
-        <div class="text-cell exp-edu">
-          <h2>Bucknell University</h2>
-          <h4><span class="fa fa-graduation-cap"></span> Bachelor of Science - <strong>Computer Science and Engineering</strong></h4>
-          <h4><span class="fa fa-calendar-check-o"></span> Aug 2014 - Present</h4>
-          <p>My classes at Bucknell have not only helped me to learn and improve my coding, but have also taught me how to work as a member of a team using design frameworks like scrum to create software. Bucknell also led me to Android development when I did research in the computer science department in the summer of 2016.
-        </div>
-
-        <div class="text-cell exp-edu">
-          <h2>Sales Associate</h2>
-          <h4><span class="fa fa-building"></span> Office Depot</h4>
-          <h4><span class="fa fa-calendar-check-o"></span> Jun 2014 - Aug 2014</h4>
-          <p>I spent the summer of 2014 working as a sales associate at Office Depot in Mountain View, California. In my time there, I learned how to engage with customers and work effectively as a member of a team.
-        </div>
-
-        <div class="text-cell exp-edu">
-          <h2>Los Altos High School</h2>
-          <h4><span class="fa fa-calendar-check-o"></span> Aug 2010 - Jun 2014</h4>
-          <p>Los Altos High School is where I first learned of my love for programming. In my senior year I took AP computer science, the class that made me want to pursue computer science in the first place.
-        </div>
-
-      </div>
-      <div class=center><a class=btn href=# id=show-exp-edu>Show More</a> <a class=btn href=# id=hide-exp-edu>Show Less</a></div>
-
-
-      <h1 id="Contact">Contact Me</h1>
-      <div class="center text-cell">
-        <p>Contact me and I'll get back to you as soon as I can.</p>
-        <p><a class=link href=https://www.google.com/maps/place/Lewisburg,+PA+17837/><span class="fa fa-map-marker"></span> Lewisburg, PA</a>
-        </p>
-        <p><a class=link href=tel:+1-650-450-2960 rel=nofollow><span class="fa fa-phone"></span> +1 (650) 450-2960</a></p>
-        <p><a class=link href=mailto:ericmarshall715@gmail.com rel=nofollow><span class="fa fa-envelope"></span> ericmarshall715@gmail.com</a></p>
-      </div>
-
-      <div class=link-pill>
-        <span class=btngroup>
-              <a class=btngroup--btn href=https://github.com/emm035/ target=_blank><span class="fa fa-github"></span></a>
-        <a class=btngroup--btn href=https://www.facebook.com/eric.marshall.3742 target=_blank><span class="fa fa-facebook"></span></a>
-        <a class=btngroup--btn href=https://www.linkedin.com/in/eric-marshall target=_blank><span class="fa fa-linkedin"></span></a>
-        </span>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    Made with <span class="fa fa-heart"></span> by Eric
-    <br> ©2016 Eric Marshall. All Rights Reserved.
-    <br>
-    <br>
-    <br> Pokémon and its trademarks are ©1995-2016 <a class="link link-inv" href=http://www.nintendo.com>Nintendo</a>, Creatures, <a class="link link-inv" href=http://www.gamefreak.co.jp/>GAMEFREAK</a> and <a class="link link-inv" href=http://www.pokemon.com/us/about-pokemon/>The Pokémon Company International, Inc.</a> All Pokémon related images are © of their respective owners. I mean no copyright infringement.
-  </footer>
-
-  <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400">
-  <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
-  <script type="text/javascript" src="./assets/js/zepto.min.js"></script>
+  
+  <!--  Load all scripts  -->
+  <script async type="text/javascript" src="./assets/js/zepto.min.js"></script>
   <script>
     $(document).ready(function(){var e=3;$(".exp-edu").length<=e?($("#show-exp-edu").hide(),$("#hide-exp-edu").hide()):($("#hide-exp-edu").hide(),$(".exp-edu").slice(e,$(".exp-edu").length).hide(),$("#show-exp-edu").on("click",function(e){e.preventDefault(),$(".exp-edu:hidden").slideDown(),$("#show-exp-edu").hide(),$("#hide-exp-edu").show()}),$("#hide-exp-edu").on("click",function(i){i.preventDefault(),$(".exp-edu").slice(e,$(".exp-edu").length).slideUp(),$("#hide-exp-edu").hide(),$("#show-exp-edu").show()}));var i=3;$(".proj").length<=i?($("#show-proj").hide(),$("#hide-proj").hide()):($("#hide-proj").hide(),$(".proj").slice(i,$(".proj").length).hide(),$("#show-proj").on("click",function(e){e.preventDefault(),$(".proj:hidden").slideDown(),$("#show-proj").hide(),$("#hide-proj").show()}),$("#hide-proj").on("click",function(e){e.preventDefault(),$(".proj").slice(i,$(".proj").length).slideUp(),$("#hide-proj").hide(),$("#show-proj").show()}))});
   </script>
 
-</body>
+  <!--  Load the CSS  -->
+  <link rel=stylesheet href=assets/css/index.min.css>
+</head>
+  <body>
+    <header>
+      <div class=header>
+        <img class=img-profile src=assets/img/Profile.jpg alt="Profile Picture">
+        <h1>Hi, I'm Eric.</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class=info-page>
+        <div class=description>
+          <p>I'm a computer science and engineering student in my junior year at Bucknell University. I am passionate about mobile development, especially creating beautiful and functional UI's. I have experience with both iOS and Android and look forward to challenging and expanding my abilities.
+        </div>
+
+        <ul class=skill-list>
+          <li class=skill>
+            <svg height=62 viewBox="-1 0 64 62" width=62 xmlns=http://www.w3.org/2000/svg>
+                        <title>Python</title>
+                        <path d="M30.775-0.006c-15.825,0-14.837,6.863-14.837,6.863l0.018,7.109h15.102v2.135h-21.1
+                      c0,0-10.126-1.148-10.126,14.819S8.67,46.321,8.67,46.321h5.275v-7.41c0,0-0.284-8.838,8.697-8.838c8.982,0,14.978,0,14.978,0
+                      s8.415,0.137,8.415-8.133c0-8.269,0-13.672,0-13.672S47.313-0.006,30.775-0.006z M22.448,4.774c1.503,0,2.717,1.214,2.717,2.717
+                      c0,1.502-1.214,2.717-2.717,2.717c-1.502,0-2.717-1.215-2.717-2.717C19.731,5.988,20.946,4.774,22.448,4.774z" fill=none id=path8615 />
+                        <path d="M31.225,62.006c15.825,0,14.838-6.862,14.838-6.862l-0.018-7.11H30.942v-2.134h21.1
+                      c0,0,10.127,1.147,10.127-14.82S53.33,15.678,53.33,15.678h-5.274v7.41c0,0,0.284,8.837-8.697,8.837c-8.982,0-14.979,0-14.979,0
+                      s-8.415-0.135-8.415,8.134c0,8.269,0,13.673,0,13.673S14.687,62.006,31.225,62.006z M39.552,57.225
+                      c-1.503,0-2.717-1.214-2.717-2.717c0-1.502,1.214-2.717,2.717-2.717c1.502,0,2.717,1.215,2.717,2.717
+                      C42.269,56.011,41.054,57.225,39.552,57.225z" fill=none id=path8620 />
+                    </svg>
+            <li class=skill>
+              <svg height=62 viewBox="0 0 62 62" width=62 xmlns=http://www.w3.org/2000/svg>
+                            <title>Git</title>
+                            <path d="M22.902 7.546l6.847 6.874c1.59-.54 3.41-.178 4.68 1.095 1.272 1.282 1.63 3.13 1.08 4.732l6.6 6.624c1.595-.55 3.44-.19 4.712 1.09 1.782 1.79 1.782 4.69 0 6.48-1.783 1.79-4.67 1.79-6.453 0-1.34-1.346-1.67-3.322-.993-4.98l-6.154-6.18v16.26c.433.217.844.505 1.205.867 1.782 1.79 1.782 4.688 0 6.48-1.78 1.787-4.67 1.787-6.45 0-1.784-1.79-1.784-4.69 0-6.48.44-.44.95-.774 1.492-1V22.99c-.544-.222-1.053-.554-1.494-.998-1.35-1.354-1.674-3.343-.98-5.007l-6.75-6.777L2.426 28.1c-1.5 1.504-1.5 3.94 0 5.444L28.42 59.638c1.497 1.503 3.924 1.503 5.423 0l25.872-25.972c1.498-1.504 1.498-3.943 0-5.446L33.72 2.127c-1.494-1.503-3.923-1.503-5.42 0l-2.846 2.857" fill=none />
+                        </svg>
+              <li class=skill>
+                <svg height=62px viewBox="0 0 62 62" width=62px xmlns=http://www.w3.org/2000/svg>
+                                <title>iOS</title>
+                                <path d="M55.62,48.094c-0.919,2.124-2.006,4.077-3.267,5.872c-1.717,2.449-3.124,4.145-4.207,5.087
+              c-1.68,1.543-3.481,2.336-5.409,2.38c-1.383,0-3.053-0.394-4.995-1.191c-1.949-0.797-3.739-1.188-5.377-1.188
+              c-1.718,0-3.56,0.392-5.53,1.188c-1.973,0.798-3.564,1.214-4.78,1.256c-1.847,0.079-3.69-0.734-5.529-2.444
+              c-1.174-1.025-2.643-2.781-4.401-5.267c-1.887-2.654-3.439-5.734-4.654-9.243c-1.302-3.792-1.954-7.462-1.954-11.017
+              c0-4.073,0.879-7.584,2.642-10.527c1.385-2.363,3.228-4.228,5.534-5.597c2.306-1.368,4.798-2.066,7.48-2.11
+              c1.469,0,3.394,0.454,5.786,1.347c2.386,0.895,3.918,1.35,4.59,1.35c0.501,0,2.205-0.531,5.089-1.591
+              c2.728-0.981,5.03-1.388,6.917-1.228c5.111,0.412,8.952,2.428,11.504,6.058c-4.569,2.77-6.832,6.648-6.787,11.625
+              c0.043,3.877,1.447,7.103,4.212,9.664c1.251,1.188,2.652,2.108,4.207,2.76C56.354,46.258,55.997,47.193,55.62,48.094L55.62,48.094z
+               M43.896,1.963c0,3.039-1.108,5.876-3.321,8.501c-2.671,3.122-5.9,4.926-9.402,4.641c-0.045-0.364-0.07-0.749-0.07-1.152
+              c0-2.917,1.27-6.039,3.526-8.59c1.124-1.292,2.557-2.367,4.292-3.224c1.731-0.844,3.372-1.312,4.914-1.392
+              C43.877,1.154,43.896,1.56,43.896,1.963L43.896,1.963z" fill=none />
+                            </svg>
+                <li class=skill>
+                  <svg height=62px viewBox="0 0 62 62" width=62px xmlns=http://www.w3.org/2000/svg>
+                                    <title>Android</title>
+                                    <path d="M15.592,46.425c0,1.412,1.156,2.568,2.568,2.568h2.568v8.987c0,2.131,1.72,3.853,3.852,3.853
+                s3.853-1.722,3.853-3.853v-8.987h5.135v8.987c0,2.131,1.722,3.853,3.854,3.853c2.131,0,3.852-1.722,3.852-3.853v-8.987h2.568
+                c1.412,0,2.567-1.156,2.567-2.568V20.744H15.592V46.425z M9.171,20.744c-2.131,0-3.852,1.721-3.852,3.852v17.976
+                c0,2.133,1.72,3.853,3.852,3.853c2.132,0,3.853-1.72,3.853-3.853V24.596C13.024,22.465,11.304,20.744,9.171,20.744z M52.829,20.744
+                c-2.132,0-3.853,1.721-3.853,3.852v17.976c0,2.133,1.721,3.853,3.853,3.853c2.131,0,3.853-1.72,3.853-3.853V24.596
+                C56.682,22.465,54.96,20.744,52.829,20.744z M40.062,5.747l3.342-3.339c0.512-0.513,0.512-1.309,0-1.823
+                c-0.516-0.513-1.309-0.513-1.823,0l-3.8,3.801C35.75,3.358,33.439,2.768,31,2.768c-2.465,0-4.776,0.591-6.832,1.618l-3.826-3.801
+                c-0.514-0.513-1.311-0.513-1.824,0c-0.514,0.515-0.514,1.311,0,1.823l3.365,3.365c-3.801,2.798-6.292,7.292-6.292,12.404h30.816
+                C46.408,13.065,43.916,8.546,40.062,5.747z M25.865,13.04h-2.568v-2.568h2.568V13.04z M38.704,13.04h-2.567v-2.568h2.567V13.04z" fill=none />
+                                </svg>
+                  <li class=skill>
+                    <svg height=62px viewBox="0 0 62 62" width=64px xmlns=http://www.w3.org/2000/svg>
+                                        <title>Sass</title>
+                                        <path d="M53.374,33.558c-2.162,0.012-4.041,0.532-5.614,1.302c-0.577-1.144-1.154-2.162-1.257-2.909
+              c-0.113-0.871-0.248-1.403-0.113-2.444c0.137-1.042,0.748-2.524,0.736-2.637s-0.136-0.645-1.381-0.656s-2.32,0.238-2.444,0.566
+              s-0.362,1.075-0.521,1.845c-0.215,1.132-2.49,5.173-3.792,7.288c-0.419-0.826-0.78-1.55-0.86-2.127
+              c-0.113-0.871-0.248-1.404-0.113-2.445c0.137-1.041,0.748-2.523,0.736-2.637s-0.137-0.645-1.381-0.656
+              c-1.245-0.012-2.32,0.237-2.445,0.566c-0.124,0.328-0.26,1.098-0.52,1.844c-0.262,0.748-3.283,7.493-4.075,9.236
+              c-0.407,0.894-0.758,1.607-1.007,2.094l0,0c0,0-0.011,0.033-0.045,0.09c-0.215,0.419-0.339,0.646-0.339,0.646s0,0,0,0.011
+              c-0.17,0.307-0.351,0.59-0.441,0.59c-0.068,0-0.192-0.815,0.022-1.925c0.453-2.343,1.529-5.987,1.517-6.112
+              c0-0.067,0.203-0.701-0.702-1.029c-0.883-0.328-1.2,0.215-1.279,0.215s-0.136,0.192-0.136,0.192s0.984-4.097-1.879-4.097
+              c-1.788,0-4.255,1.958-5.478,3.724c-0.77,0.419-2.411,1.312-4.165,2.274c-0.667,0.373-1.358,0.747-2.003,1.098
+              c-0.045-0.045-0.091-0.102-0.136-0.146C10.795,33.614,4.389,31,4.661,26.031c0.102-1.811,0.724-6.564,12.302-12.337
+              c9.53-4.697,17.113-3.395,18.426-0.509c1.879,4.12-4.063,11.771-13.91,12.88c-3.758,0.419-5.727-1.03-6.225-1.573
+              c-0.521-0.566-0.6-0.6-0.792-0.487c-0.317,0.169-0.113,0.679,0,0.973c0.294,0.77,1.505,2.128,3.554,2.796
+              c1.811,0.588,6.213,0.916,11.544-1.144c5.964-2.309,10.628-8.726,9.258-14.102c-1.369-5.455-10.424-7.255-18.991-4.21
+              c-5.093,1.811-10.616,4.663-14.589,8.375c-4.72,4.414-5.467,8.251-5.161,9.858c1.098,5.704,8.964,9.416,12.11,12.167
+              c-0.159,0.091-0.306,0.17-0.43,0.237c-1.573,0.781-7.572,3.916-9.066,7.232c-1.698,3.758,0.272,6.451,1.573,6.813
+              c4.041,1.12,8.194-0.894,10.424-4.222c2.23-3.327,1.958-7.65,0.928-9.631c-0.011-0.023-0.022-0.046-0.045-0.068
+              c0.408-0.238,0.826-0.486,1.234-0.725c0.804-0.475,1.596-0.916,2.275-1.279c-0.385,1.053-0.668,2.309-0.804,4.12
+              c-0.17,2.128,0.702,4.89,1.845,5.976c0.509,0.476,1.109,0.486,1.494,0.486c1.335,0,1.936-1.108,2.603-2.422
+              c0.815-1.606,1.551-3.475,1.551-3.475s-0.917,5.049,1.573,5.049c0.905,0,1.822-1.178,2.229-1.777c0,0.012,0,0.012,0,0.012
+              s0.022-0.034,0.068-0.113c0.091-0.147,0.147-0.238,0.147-0.238s0-0.012,0-0.022c0.363-0.634,1.177-2.071,2.388-4.459
+              c1.562-3.079,3.067-6.927,3.067-6.927s0.136,0.939,0.6,2.501c0.272,0.917,0.838,1.925,1.29,2.897
+              c-0.361,0.51-0.588,0.793-0.588,0.793s0,0,0.012,0.011c-0.295,0.385-0.611,0.804-0.963,1.211c-1.233,1.472-2.705,3.157-2.908,3.645
+              c-0.238,0.577-0.182,0.996,0.271,1.335c0.328,0.25,0.916,0.283,1.517,0.25c1.108-0.08,1.89-0.352,2.274-0.521
+              c0.6-0.215,1.302-0.543,1.959-1.029c1.211-0.895,1.946-2.174,1.878-3.859c-0.034-0.928-0.339-1.856-0.713-2.729
+              c0.113-0.158,0.216-0.316,0.328-0.475c1.913-2.796,3.396-5.863,3.396-5.863s0.136,0.939,0.6,2.502
+              c0.227,0.792,0.691,1.652,1.098,2.49c-1.799,1.459-2.908,3.157-3.305,4.266c-0.713,2.061-0.158,2.988,0.895,3.203
+              c0.475,0.103,1.154-0.124,1.652-0.339c0.634-0.204,1.381-0.555,2.094-1.075c1.211-0.895,2.377-2.139,2.309-3.826
+              c-0.033-0.77-0.237-1.527-0.521-2.264c1.528-0.633,3.497-0.984,6.011-0.689c5.387,0.633,6.451,3.995,6.247,5.41
+              c-0.204,1.414-1.336,2.184-1.709,2.422c-0.374,0.237-0.498,0.316-0.464,0.486c0.045,0.249,0.227,0.238,0.543,0.192
+              c0.441-0.079,2.83-1.144,2.932-3.746C62.146,37.157,58.976,33.523,53.374,33.558z M11.814,47.569
+              c-1.789,1.947-4.278,2.683-5.354,2.061c-1.154-0.668-0.702-3.543,1.494-5.604c1.335-1.256,3.056-2.422,4.199-3.135
+              c0.26-0.158,0.645-0.385,1.109-0.668c0.079-0.045,0.125-0.067,0.125-0.067l0,0c0.09-0.057,0.181-0.113,0.271-0.17
+              C14.462,42.929,13.693,45.521,11.814,47.569z M24.83,38.719c-0.623,1.517-1.924,5.398-2.716,5.184
+              c-0.679-0.181-1.098-3.124-0.136-6.032c0.486-1.461,1.517-3.203,2.116-3.883c0.974-1.086,2.049-1.448,2.309-1.007
+              C26.731,33.558,25.214,37.769,24.83,38.719z M35.57,43.856c-0.261,0.137-0.509,0.227-0.622,0.159
+              c-0.08-0.046,0.113-0.227,0.113-0.227s1.346-1.448,1.879-2.104c0.305-0.385,0.667-0.838,1.052-1.348c0,0.045,0,0.102,0,0.147
+              C37.992,42.216,36.317,43.382,35.57,43.856z M43.854,41.967c-0.191-0.136-0.158-0.589,0.487-2.003
+              c0.249-0.555,0.837-1.482,1.845-2.377c0.113,0.362,0.192,0.713,0.182,1.041C46.356,40.812,44.794,41.628,43.854,41.967z" fill=none />
+                                    </svg>
+                    <li class=skill>
+                      <svg height=55 viewBox="0 0 48 55" width=48 xmlns=http://www.w3.org/2000/svg>
+                                            <title>HTML</title>
+                                            <path d="M35.437 12.205H11.953l1.054 12.75h21.828l-.753 13.575-10.086 3.225-9.935-3.225-.335-4.284m10.273 19.66l-18.817-6L.964.656h46.064l-4.215 47.25-18.817 6" fill=none></path>
+                                        </svg>
+        </ul>
+
+
+        <h1 id="Projects">Projects</h1>
+
+        <div>
+          <div class="img-cell proj img-cell-right">
+            <div class=text-area>
+              <h2>ericmarshall.codes</h2>
+              <p>I created this page in the summer of 2016 using HTML and CSS (compiled from SCSS) with a pinch of JQuery thrown in. I keep it regularly updated with my current projects as well as my up-to-date resume.</div>
+            <div class=center-vertical>
+              <div class="autoplay gallery items-1">
+                <figure class=item><img class=img-gallery src=assets/img/Website.png alt="Website Screenshot"></figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="img-cell proj img-cell-left">
+            <div class=center-vertical>
+              <div class="autoplay gallery items-2">
+                <figure class=item><img class=img-gallery src=assets/img/Dime-Carousel-1.png alt="Dime Screenshot 1"></figure>
+                <figure class=item><img class=img-gallery src=assets/img/Dime-Carousel-2.png alt="Dime Screenshot 2"></figure>
+              </div>
+            </div>
+            <div class=text-area>
+              <h2>Dime</h2>
+              <p>Dime is an iOS application designed to simplify sending expense reports. Its main goal is to make expense reports easy by not requiring a third-party web account to compile or send a group of expenses as a report.
+                <div class=center><a class="btn btn-outline" href="https://geo.itunes.apple.com/us/app/dime-expense-reports-made/id1028920691?mt=8" target=_blank>App Store</a></div>
+            </div>
+          </div>
+
+          <div class="img-cell proj img-cell-right">
+            <div class=text-area>
+              <h2>Physio</h2>
+              <p>Physio is an android application that acts as an architecture for communication between a Microsoft Band and a remote server used to gather data that is fed to a cognitive architecture (ACT-R/&phi;).</p>
+              <p> The application is written in Java, and the companion server is written in Node.js with a MongoDB database.
+                <div class=center></div>
+            </div>
+            <div class=center-vertical>
+              <div class="autoplay gallery items-2">
+                <figure class=item><img class=img-gallery src=assets/img/Physio-Gallery-1.png alt="Physio Screenshot 1"></figure>
+                <figure class=item><img class=img-gallery src=assets/img/Physio-Gallery-2.png alt="Physio Screenshot 2"></figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="img-cell proj img-cell-left">
+            <div class=center-vertical>
+              <div class="autoplay gallery items-3">
+                <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-1.png alt="Pokemon Screenshot 1"></figure>
+                <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-2.png alt="Pokemon Screenshot 2"></figure>
+                <figure class=item><img class=img-gallery src=assets/img/Pokemon-Carousel-3.png alt="Pokemon Screenshot 3"></figure>
+              </div>
+            </div>
+            <div class=text-area>
+              <h2>Pokémon Orange &amp; Blue</h2>
+              <p>Pokémon Orange &amp; Blue is a version of the Pokémon games themed around Bucknell University. It is written in Java and was created by myself and 3 others in the spring of 2016 for a Software Engineering and Design class.
+                <p>Our goal was to create something that looked and felt like one of the original Pokémon games. I was in charge of creating the graphical interface and its interactions with the underlying components of the game.
+                  <div class=center><a class="btn btn-outline" href=https://github.com/BenMatase/PokemonOrangeAndBlue target=_blank>Github</a></div>
+            </div>
+          </div>
+
+          <div class=center>
+            <a class=btn href=# id=show-proj>Show More</a>
+            <a class=btn href=# id=hide-proj>Show Less</a>
+          </div>
+        </div>
+
+
+        <h1 id="ExpAndEdu">Experience &amp; Education</h1>
+        <div class=center>
+          <a class="btn btn-outline" href=assets/resume/Eric%20Marshall%20Resume.pdf download>Download Resume</a>
+        </div>
+        <div>
+          <div class="text-cell exp-edu">
+            <h2>Student Researcher</h2>
+            <h4><span class="fa fa-building"></span> Bucknell University</h4>
+            <h4><span class="fa fa-calendar-check-o"></span> May 2016 - Aug 2016</h4>
+            <p>In the summer of 2016, I spent 3 months as a student research assistant working with Professor Chris Dancy. The goal of my research was designing and implementing an architecture for communication between a Microsoft Band smart watch and a Lisp based cognitive architecture (ACT-R/Φ). I did this by creating an Android application (Physio) that would pass data from the watch to a Node.js server running on my computer.
+          </div>
+
+          <div class="text-cell exp-edu">
+            <h2>Bucknell University</h2>
+            <h4><span class="fa fa-graduation-cap"></span> Bachelor of Science - <strong>Computer Science and Engineering</strong></h4>
+            <h4><span class="fa fa-calendar-check-o"></span> Aug 2014 - Present</h4>
+            <p>My classes at Bucknell have not only helped me to learn and improve my coding, but have also taught me how to work as a member of a team using design frameworks like scrum to create software. Bucknell also led me to Android development when I did research in the computer science department in the summer of 2016.
+          </div>
+
+          <div class="text-cell exp-edu">
+            <h2>Sales Associate</h2>
+            <h4><span class="fa fa-building"></span> Office Depot</h4>
+            <h4><span class="fa fa-calendar-check-o"></span> Jun 2014 - Aug 2014</h4>
+            <p>I spent the summer of 2014 working as a sales associate at Office Depot in Mountain View, California. In my time there, I learned how to engage with customers and work effectively as a member of a team.
+          </div>
+
+          <div class="text-cell exp-edu">
+            <h2>Los Altos High School</h2>
+            <h4><span class="fa fa-calendar-check-o"></span> Aug 2010 - Jun 2014</h4>
+            <p>Los Altos High School is where I first learned of my love for programming. In my senior year I took AP computer science, the class that made me want to pursue computer science in the first place.
+          </div>
+
+        </div>
+        <div class=center><a class=btn href=# id=show-exp-edu>Show More</a> <a class=btn href=# id=hide-exp-edu>Show Less</a></div>
+
+
+        <h1 id="Contact">Contact Me</h1>
+        <div class="center text-cell">
+          <p>Contact me and I'll get back to you as soon as I can.</p>
+          <p><a class=link href=https://www.google.com/maps/place/Lewisburg,+PA+17837/><span class="fa fa-map-marker"></span> Lewisburg, PA</a>
+          </p>
+          <p><a class=link href=tel:+1-650-450-2960 rel=nofollow><span class="fa fa-phone"></span> +1 (650) 450-2960</a></p>
+          <p><a class=link href=mailto:ericmarshall715@gmail.com rel=nofollow><span class="fa fa-envelope"></span> ericmarshall715@gmail.com</a></p>
+        </div>
+
+        <div class=link-pill>
+          <span class=btngroup>
+                <a class=btngroup--btn href=https://github.com/emm035/ target=_blank><span class="fa fa-github"></span></a>
+          <a class=btngroup--btn href=https://www.facebook.com/eric.marshall.3742 target=_blank><span class="fa fa-facebook"></span></a>
+          <a class=btngroup--btn href=https://www.linkedin.com/in/eric-marshall target=_blank><span class="fa fa-linkedin"></span></a>
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Made with <span class="fa fa-heart"></span> by Eric
+      <br> ©2016 Eric Marshall. All Rights Reserved.
+      <br>
+      <br>
+      <br> Pokémon and its trademarks are ©1995-2016 <a class="link link-inv" href=http://www.nintendo.com>Nintendo</a>, Creatures, <a class="link link-inv" href=http://www.gamefreak.co.jp/>GAMEFREAK</a> and <a class="link link-inv" href=http://www.pokemon.com/us/about-pokemon/>The Pokémon Company International, Inc.</a> All Pokémon related images are © of their respective owners. I mean no copyright infringement.
+    </footer>
+  </body>
+
+  <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400">
+  <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
 
 </html>
