@@ -18,10 +18,7 @@
   <link href=assets/img/favicon.png rel=icon type=image/png>
   
   <!--  Load all scripts  -->
-  <script type="text/javascript" src="./assets/js/zepto.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){var e=3;$(".exp-edu").length<=e?($("#show-exp-edu").hide(),$("#hide-exp-edu").hide()):($("#hide-exp-edu").hide(),$(".exp-edu").slice(e,$(".exp-edu").length).hide(),$("#show-exp-edu").on("click",function(i){i.preventDefault(),$(".exp-edu").slice(e,$(".exp-edu").length).slideDown(),$("#show-exp-edu").hide(),$("#hide-exp-edu").show()}),$("#hide-exp-edu").on("click",function(i){i.preventDefault(),$(".exp-edu").slice(e,$(".exp-edu").length).slideUp(),$("#hide-exp-edu").hide(),$("#show-exp-edu").show()}));var i=3;$(".proj").length<=i?($("#show-proj").hide(),$("#hide-proj").hide()):($("#hide-proj").hide(),$(".proj").slice(i,$(".proj").length).hide(),$("#show-proj").on("click",function(e){e.preventDefault(),$(".proj").slice(i,$(".proj").length).slideDown(),$("#show-proj").hide(),$("#hide-proj").show()}),$("#hide-proj").on("click",function(e){e.preventDefault(),$(".proj").slice(i,$(".proj").length).slideUp(),$("#hide-proj").hide(),$("#show-proj").show()}))});
-  </script>
+  <script async type="text/javascript" src="./assets/js/zepto.min.js"></script>
 </head>
   <body>
     <header>
@@ -166,8 +163,7 @@
             <div class=text-area>
               <h2>Physio</h2>
               <p>Physio is an android application that acts as an architecture for communication between a Microsoft Band and a remote server used to gather data that is fed to a cognitive architecture (ACT-R/&phi;).</p>
-              <p> The application is written in Java, and the companion server is written in Node.js with a MongoDB database.
-                <div class=center></div>
+              <p> The application is written in Java, and the companion server is written in Node.js with a MongoDB database.</p>
             </div>
             <div class=center-vertical>
               <div class="autoplay gallery items-2">
@@ -188,8 +184,10 @@
             <div class=text-area>
               <h2>Pokémon Orange &amp; Blue</h2>
               <p>Pokémon Orange &amp; Blue is a version of the Pokémon games themed around Bucknell University. It is written in Java and was created by myself and 3 others in the spring of 2016 for a Software Engineering and Design class.
-                <p>Our goal was to create something that looked and felt like one of the original Pokémon games. I was in charge of creating the graphical interface and its interactions with the underlying components of the game.
-                  <div class=center><a class="btn btn-outline" href=https://github.com/BenMatase/PokemonOrangeAndBlue target=_blank>Github</a></div>
+              <p>Our goal was to create something that looked and felt like one of the original Pokémon games. I was in charge of creating the graphical interface and its interactions with the underlying components of the game.</p>
+              <div class=center>
+                <a class="btn btn-outline" href=https://github.com/BenMatase/PokemonOrangeAndBlue target=_blank>Github</a>
+              </div>
             </div>
           </div>
 
@@ -269,7 +267,6 @@
 
   <!--  Link CSS stylesheets  -->
   <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400">
-  <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
 
 </html>
