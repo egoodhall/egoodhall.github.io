@@ -15,5 +15,7 @@ CACHE MANIFEST
 
 /assets/resume/Eric%20Marshall%20Resume.pdf
 
+/assets/css/*.css
+
 NETWORK:
 index.html
