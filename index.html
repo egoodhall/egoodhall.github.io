@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--  Load the initial CSS  -->
+    <link rel=stylesheet href=index.css>
+
+    <!--  Link CSS stylesheets  -->
+    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
 
   <!--  Launch Async requests for the javascript  -->
   <meta charset=utf-8>
@@ -21,181 +27,82 @@
 </head>
 
 <body>
-  <main>
-    <div class=hero>
-      <img class=img-profile src=assets/img/Profile.jpg alt="Profile Picture">
+  <header>
+    <img src="assets/img/Profile.jpg" alt="My picture" />
+    <h1>Hi, I'm Eric.</h1>
+    <p>I'm a software engineer based in Somerville, MA.</p>
+    <h2><a href="https://emm035.github.io/resume/resume.html">Resume</a></h2>
+  </header>
+
+  <section>
+    <header>
+      <h2>About Me</h2>
+    </header>
+    <p>
+      I grew up in California, on the base of the San Francisco peninsula.
+      I went to Bucknell University in Lewisburg, PA and then moved to Cambridge, MA
+      for a job. I now live with my Fiancé in Somerville, MA. In my free time I love
+      going disc golfing, playing video games, hiking, and enjoying a cold beer.
+    </p>
+    <p>
+      I love solving difficult technical problems, and picking up new tools. I have
+      experience using Java, Go, JavaScript (React), and Bash in a professional
+      environment. Check out my <a href="https://github.com/emm035">GitHub</a> to see
+      some of my projects!
+    </p>
+    <p>
+      I am currently a software engineer at <a class="link" href="https://maidata.io/">maiData</a>!
+    </p>
+  </section>
+
+  <section>
+    <header>
+      <h2>Experience</h2>
+    </header>
+
+    <h3>
+      Check out my <a href="https://emm035.github.io/resume/resume.html">resume</a>
+      for more detailed information about my experience!
+    </h3>
+
+    <div class="timeline">
+      <div class="item">
+        <header>
+          <h3>maiData</h3>
+          <time>Nov 2021 - Present</time>
+        </header>
+        <i>Senior Software Engineer</i>
+      </div>
+      <div class="item">
+        <header>
+          <h3>HubSpot</h3>
+          <time>Jun 2019 - Nov 2021</time>
+        </header>
+        <i>Senior Software Engineer I - Sandboxes / API Tooling</i>
+      </div>
+      <div class="item">
+        <header>
+          <h3>HubSpot</h3>
+          <time>Jul 2018 - Jun 2019</time>
+        </header>
+        <i>Senior Software Engineer I - API Tooling</i>
+      </div>
+      <div class="item">
+        <header>
+          <h3>128 Technology</h3>
+          <time>May 2017 - Aug 2017</time>
+        </header>
+        <i>Software Engineering Intern</i>
+      </div>
     </div>
-    <div class=info-page>
-      <div class=greeting>Hi, I'm Eric.</div>
-      <ul class=skill-list>
-        <li class=skill>
-          <svg height=62 viewBox="-1 0 64 62" width=62 xmlns=http://www.w3.org/2000/svg>
-            <title>Python</title>
-            <path d="M30.775-0.006c-15.825,0-14.837,6.863-14.837,6.863l0.018,7.109h15.102v2.135h-21.1
-            c0,0-10.126-1.148-10.126,14.819S8.67,46.321,8.67,46.321h5.275v-7.41c0,0-0.284-8.838,8.697-8.838c8.982,0,14.978,0,14.978,0
-            s8.415,0.137,8.415-8.133c0-8.269,0-13.672,0-13.672S47.313-0.006,30.775-0.006z M22.448,4.774c1.503,0,2.717,1.214,2.717,2.717
-            c0,1.502-1.214,2.717-2.717,2.717c-1.502,0-2.717-1.215-2.717-2.717C19.731,5.988,20.946,4.774,22.448,4.774z" fill=none
-            id=path8615 />
-            <path d="M31.225,62.006c15.825,0,14.838-6.862,14.838-6.862l-0.018-7.11H30.942v-2.134h21.1
-            c0,0,10.127,1.147,10.127-14.82S53.33,15.678,53.33,15.678h-5.274v7.41c0,0,0.284,8.837-8.697,8.837c-8.982,0-14.979,0-14.979,0
-            s-8.415-0.135-8.415,8.134c0,8.269,0,13.673,0,13.673S14.687,62.006,31.225,62.006z M39.552,57.225
-            c-1.503,0-2.717-1.214-2.717-2.717c0-1.502,1.214-2.717,2.717-2.717c1.502,0,2.717,1.215,2.717,2.717
-            C42.269,56.011,41.054,57.225,39.552,57.225z" fill=none id=path8620 />
-          </svg>
-        </li>
-        <li class=skill>
-          <svg height=62 viewBox="0 0 62 62" width=62 xmlns=http://www.w3.org/2000/svg>
-            <title>Git</title>
-            <path d="M22.902 7.546l6.847 6.874c1.59-.54 3.41-.178 4.68 1.095 1.272 1.282 1.63 3.13 1.08 4.732l6.6 6.624c1.595-.55 3.44-.19 4.712 1.09 1.782 1.79 1.782 4.69 0 6.48-1.783 1.79-4.67 1.79-6.453 0-1.34-1.346-1.67-3.322-.993-4.98l-6.154-6.18v16.26c.433.217.844.505 1.205.867 1.782 1.79 1.782 4.688 0 6.48-1.78 1.787-4.67 1.787-6.45 0-1.784-1.79-1.784-4.69 0-6.48.44-.44.95-.774 1.492-1V22.99c-.544-.222-1.053-.554-1.494-.998-1.35-1.354-1.674-3.343-.98-5.007l-6.75-6.777L2.426 28.1c-1.5 1.504-1.5 3.94 0 5.444L28.42 59.638c1.497 1.503 3.924 1.503 5.423 0l25.872-25.972c1.498-1.504 1.498-3.943 0-5.446L33.72 2.127c-1.494-1.503-3.923-1.503-5.42 0l-2.846 2.857"
-            fill=none />
-          </svg>
-        </li>
-        <li class=skill>
-          <svg xmlns="http://www.w3.org/2000/svg" width="53" height="61" viewBox="0 0 53 61">
-            <title>Node.js</title>
-            <path fill="none" d="M16.76 20.738s.055 17.7.055 24.57c-.173 6.28-6.278 5.748-9.53 3.87C4.033 47.302.5
-            44.954.5 44.954V16.357L26.294 1.465l25.794 14.892v28.596L26.294 59.845l-7.927-4.577M41.44
-            25.162c-.118-6.752-17.114-7.217-17.347 0-.233 7.218 18.51 2.91 18.51 10.478 0 7.567-18.743 8.032-19.44.465"
-            />
-          </svg>
-        </li>
-      </ul>
-      <div class="description center">
-        <p>
-          I'm a recent graduate of computer science and engineering at Bucknell University with experience in several
-          languages, including (but not limited to) Python, Javascript, and Java, and am always excited to keep
-          expanding my repertoire.
-        </p>
-        <p>
-          In my free time I love going disc golfing, hiking, and enjoying a cold beer.
-        </p>
-        <p>
-          I am currently a software engineer at <a class="link" href="https://www.hubspot.com/">HubSpot</a>!
-        </p>
-      </div>
+  </section>
 
-      <div class=center>
-        <a class="btn btn-outline" href=assets/resume/Eric%20Marshall%20Resume.pdf download>Check Out My Resume</a>
-      </div>
+  <footer>
+    Made with
+    <span class="fa fa-heart link -inv"></span> by Eric
+    <br> ©2016-2022 Eric Marshall. All Rights Reserved.
+  </footer>
 
-      <h1 id="Projects">Favorite Projects</h1>
-
-      <div class="img-cell proj img-cell-left">
-        <div class=text-area>
-          <h2>Short.ly</h2>
-          <p>
-            Shortly is a simple URL shortener inspired by some of my interview questions at HubSpot.
-            The server exposes an API for each shortened URL that posts an event feed using Jersey's
-            Server Sent Events.
-          </p>
-          <p>
-            The system is composed of a React frontend (served by nginx), and a
-            Dropwizard/MongoDB backend. All modules in the project are Dockerized, and built with 
-            <a class="link" href="https://github.com/emm035/pmake">pmake</a>.
-          </p>
-          <div class=center>
-            <a class="btn btn-outline" target="none" href="https://github.com/emm035/short.ly">GitHub</a>
-          </div>
-        </div>
-        <div class=center-vertical>
-          <div class="autoplay gallery items-1">
-            <figure class=item>
-              <img class=img-gallery src=assets/img/Shortly-Carousel-1.png alt="Shortly Screenshot 1">
-            </figure>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="img-cell proj img-cell-right">
-          <div class=center-vertical>
-            <div class="autoplay gallery items-1">
-              <figure class=item>
-                <video width=336 height=203 playsinline autoplay muted loop>
-                  <source src="assets/img/pmake.mp4" type="video/mp4">
-                  </video>
-                </figure>
-              </div>
-            </div>
-            <div class=text-area>
-              <h2>pmake</h2>
-              <p>
-                A build tool, that allows for specification of multiple tasks and task groups. All tasks in a group are
-                run simultaneously, allowing for better build times, and guaranteeing that all prerequisite tasks are
-                completed before the next group starts.
-              </p>
-              <p>
-                Custom output can be specified for failure and success messages using the YAML formatted pmake file.
-              </p>
-              <div class=center><a class="btn btn-outline" href="https://github.com/emm035/pmake" target=_blank>GitHub</a></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="img-cell proj img-cell-left">
-          <div class=text-area>
-            <h2>Dime</h2>
-            <p>Dime is an iOS application designed to simplify sending expense reports. Its main goal is to make expense reports
-            easy by not requiring a third-party web account to compile or send a group of expenses as a report.</p>
-            <p>Dime compiles recorded expenses into PDFs, generating them on the device itself, meaning no internet is required
-            to push a report to the user's outbox.</p>
-            <div class=center>
-              <a class="btn btn-outline" href="https://github.com/emm035/dime-ios" target=_blank>GitHub</a>
-            </div>
-          </div>
-          <div class=center-vertical>
-            <div class="autoplay gallery items-2">
-              <figure class=item>
-                <img class=img-gallery src=assets/img/Dime-Carousel-1.png alt="Dime Screenshot 1">
-              </figure>
-              <figure class=item>
-                <img class=img-gallery src=assets/img/Dime-Carousel-2.png alt="Dime Screenshot 2">
-              </figure>
-            </div>
-          </div>
-          
-        </div>
-
-        <h1 id="Contact">Say Hi!</h1>
-        <div class="center text-cell">
-          <p>
-            <a class=link target='blank' href='&#109;ailt&#111;&#58;e&#37;7&#50;ic&#37;6D&#97;r&#115;ha&#108;l71&#53;&#64;g&#109;a%69l&#46;com'
-            rel=nofollow>
-            <span class="fa fa-envelope"></span> &#101;ricma&#114;shall&#55;1&#53;&#64;gm&#97;il&#46;co&#109;</a>
-          </p>
-          <p>
-            <a class=link target='_blank' href=https://www.google.com/maps/place/Cambridge,+MA+02141/>
-            <span class="fa fa-map-marker"></span> Cambridge, MA</a>
-          </p>
-        </div>
-
-        <div class=link-pill>
-          <span class=btngroup>
-            <a class=btngroup--btn href=https://github.com/emm035/ target=_blank>
-              <span class="fa fa-github"></span>
-            </a>
-            <a class=btngroup--btn href=https://www.facebook.com/eric.marshall.3742 target=_blank>
-              <span class="fa fa-facebook"></span>
-            </a>
-            <a class=btngroup--btn href=https://www.linkedin.com/in/eric-marshall target=_blank>
-              <span class="fa fa-linkedin"></span>
-            </a>
-          </span>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      Made with
-      <span class="fa fa-heart link -inv"></span> by Eric
-      <br> ©2016-2018 Eric Marshall. All Rights Reserved.
-    </footer>
-    <!--  Load the initial CSS  -->
-    <link rel=stylesheet href=assets/css/index.min.css>
-
-    <!--  Link CSS stylesheets  -->
-    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400">
-    <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
   </body>
 
   </html>
