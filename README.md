@@ -1,3 +1,3 @@
-# emm035.github.io
+# egoodhall.github.io
 
-Repository for [emm035.github.io](https://emm035.github.io/ "Eric Marshall's Website").
+Repository for [egoodhall.github.io](https://egoodhall.github.io/ "Eric Marshall's Website").
