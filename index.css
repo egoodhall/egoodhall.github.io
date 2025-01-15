@@ -14,11 +14,20 @@ body>header {
 
 body>header>img {
   border-radius: 50%;
-  border: 2px solid grey;
+  border: 1.5px solid #2f72d0;
   max-width: max-content;
   max-height: max-content;
   width: 180px;
   height: 180px;
+}
+
+a {
+  color: #2f72d0;
+
+}
+
+a:visited {
+  color: #163b70;
 }
 
 body>header>h1 {
@@ -46,7 +55,7 @@ section>header {
 .timeline {
   margin-top: 1rem;
   margin-left: 1rem;
-  border-left: 4px solid lightgrey;
+  border-left: 1px solid lightgray;
   margin-right: 1rem;
   padding-left: 1rem;
   padding-bottom: 1rem;
@@ -112,14 +121,37 @@ footer {
 }
 
 .timeline>.item>header>h3::before {
-  margin-left: -1.72rem;
+  margin-left: -1.42rem;
   margin-right: 1rem;
   content: "";
-  width:0.8rem;
-  height:0.8rem;
+  width:0.4rem;
+  height:0.4rem;
   border-radius:50%;
   border: 0.2rem solid white;
-  background: lightgrey;
+  background: gray;
   position: relative;
   display: inline-block;
+}
+
+@keyframes wobble {
+  20% {
+    border-radius: 65% 75% 70% 65% / 75% 65% 70% 65%;
+  }
+  40% {
+    border-radius: 75% 65% 75% 70% / 70% 75% 65% 70%;
+  }
+  60% {
+    border-radius: 70% 75% 65% 75% / 65% 70% 75% 65%;
+  }
+  80% {
+    border-radius: 65% 70% 75% 65% / 75% 65% 70% 75%;
+  }
+  100% {
+    border-radius: 75% 65% 70% 75% / 70% 75% 65% 70%;
+  }
+}
+
+.border-wobble {
+  border-radius: 75% 65% 70% 75% / 70% 75% 65% 70%;
+  animation: wobble 6s ease-in-out infinite;
 }
