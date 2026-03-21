@@ -26,10 +26,6 @@ a {
 
 }
 
-a:visited {
-  color: #163b70;
-}
-
 body>header>h1 {
   font-size: 3rem;
   font-weight: 00;
@@ -131,6 +127,10 @@ footer {
   background: dodgerblue;
   position: relative;
   display: inline-block;
+}
+
+.heart {
+  color: dodgerblue;
 }
 
 @keyframes wobble {
